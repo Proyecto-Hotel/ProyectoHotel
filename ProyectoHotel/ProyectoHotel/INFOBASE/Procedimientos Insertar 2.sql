@@ -123,7 +123,10 @@ create procedure InsertarUsuario
 As Begin
 If exists(Select Identidad, UserName from Usuarios where Identidad = @Identidad and UserName = @UserName)
 raiserror('¡Error! El usuario ya existe, Intente con otro Nombre de Usuario u otro Numero de Identidad', 16, 1)
-Else 
+
+Else if Exists(Select Identidad from Empleados where Identidad <> @Identidad)
+raiserror('¡Error! El Empleado No existe, Verifique El numero de Identidad', 16, 1)
+else
 Insert Into Usuarios(UserName, Psw, Identidad)
 Values (@UserName, @Psw, @Identidad)
 end 
