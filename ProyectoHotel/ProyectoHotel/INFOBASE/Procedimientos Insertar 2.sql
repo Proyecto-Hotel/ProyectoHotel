@@ -112,6 +112,8 @@ Values (@IdReservacion, @FechaReservacion, @CantidadDias, @NumTarjeta, @IdHuespe
 
 end
 go
+
+--exec InsertarReservacion 1,'2020-10-31 22:19:00',3,
 ------------------USUARIO--------------------
 create procedure InsertarUsuario
 --Definicion de alias--
@@ -125,3 +127,4 @@ Else
 Insert Into Usuarios(UserName, Psw, Identidad)
 Values (@UserName, @Psw, @Identidad)
 end 
+
