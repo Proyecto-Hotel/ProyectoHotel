@@ -79,6 +79,7 @@ values(@Identidad, @Nombre, @Apellido, @Telefono, @CorreoElectronico, @RTN, @idT
 @idHorario)
 End
 go
+
 -----------------------HABITACION-------------------------
 create procedure insertarHabitacion
 -- Definicion de alias

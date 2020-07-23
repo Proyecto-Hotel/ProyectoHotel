@@ -11,17 +11,20 @@ create procedure actualizarEmpleados(
 	@Apellido varchar(45),
 	@Telefono int,
 	@CorreoElectronico varchar(45),
-	@RTN varchar(16)
+	@RTN varchar(16),
+	@TipoEmpleado int,
+	@idHorario int
+
 )
 	as begin
 	if exists(select @Identidad, Estado from Empleados where Identidad=@Identidad and Estado='Activo')
 	update Empleados
-	set Nombre=@Nombre, Apellido=@Apellido, Telefono=@Telefono, CorreoElectronico=@CorreoElectronico,RTN=@RTN
+	set Nombre = @Nombre, Apellido = @Apellido, Telefono = @Telefono, CorreoElectronico = @CorreoElectronico, RTN = @RTN, IdTipoElmpleado = @TipoEmpleado, IdHorarios = @idHorario
 	where Identidad=@Identidad
 	else
 	raiserror('El usuario no puede ser modificado, Ingrese otro usuario',16,1)
 	end
-
+	go
 ---------------------------------HABITACIONES----------------------------------------------------------------
 create procedure actualizarHabitaciones(
 	@IdHabitacion int,
@@ -36,7 +39,7 @@ create procedure actualizarHabitaciones(
 	else
 		raiserror('No se pudo actualizar esta habitacion, Ingrese otra',16,1)
 end
-
+go
 -----------------------------------------HORARIOS---------------------------------------------------------
 create procedure actualizarHorarios(
 	@idHorarios int,
@@ -51,7 +54,7 @@ create procedure actualizarHorarios(
 	else
 		raiserror('No se puede actualizar este Horario, Ingrese otro',16,1)
 end
-
+go
 -------------------------------------------HUESPED---------------------------------------------------------
 create procedure actualizarHuesped(
 	@Identidad varchar(15),
@@ -69,7 +72,7 @@ as begin
 	else
 		raiserror('El Huesped no puede ser modificado, Ingrese otro Huesped',16,1)
 end
-
+go
 
 -----------------------------------------RESERVACION-----------------------------------------------------
 ----PENDIENTE--------------------------------------------
@@ -87,7 +90,7 @@ as begin
 	else
 		raiserror('La reservacion no puede ser modificada, Ingrese otra Reservacion',16,1)
 end
-
+go
 -------------------------------------------TIPO EMPLEADO-----------------------------------------------------
 create procedure actualizarTipoEmpleado(
 	@IdTipoEmpleado int,
@@ -102,7 +105,7 @@ as begin
 	else
 		raiserror('El tipo de Empleado no puede ser modificado, Ingrese otro tipo de Empleado',16,1)
 end
-
+go
 ---------------------------------------------TIPO HABITACIONES---------------------------------------------------------
 create procedure actualizarTipoHabitacion(
 	@IdTipoHabitaciones int,
@@ -117,12 +120,13 @@ as begin
 	else
 		raiserror('El tipo de Habitacion no puede ser modificado, Ingrese otro tipo de Habitacion',16,1)
 end
-
+go
 -----------------------------------------------USUARIOS---------------------------------------------------------------------
-create procedure actualizarUsuarios(
-	@Identidad varchar(15),
+Alter procedure actualizarUsuarios(
+	
 	@UserName varchar(45),
-	@Psw varchar(45)
+	@Psw varchar(45),
+	@Identidad varchar(15)
 )
 as begin 
 	if exists(select @Identidad from Usuarios where Identidad=@Identidad)
@@ -132,5 +136,5 @@ as begin
 	else
 		raiserror('El Usuario no puede ser modificado, Ingrese otro Usuario',16,1)
 end
-		
+go
 

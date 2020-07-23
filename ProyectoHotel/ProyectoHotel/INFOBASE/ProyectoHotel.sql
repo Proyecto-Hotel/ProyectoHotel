@@ -6,12 +6,13 @@ go
 create table Empleados(
 Identidad varchar(15) Primary key not null,
 Nombre Varchar(45) not null,
-Apellido varchar not null,
+Apellido varchar(45) not null,
 Telefono int,
 CorreoElectronico Varchar(45) not null,
-RTN Varchar(16),
+RTN Varchar(16)
 )
 go 
+
 alter table Empleados
 add IdTipoElmpleado int foreign key references TipoEmpleado(IdTipoEmpleado) not null
 alter table Empleados
@@ -99,6 +100,28 @@ Nombre varchar(45) not null,
 capacidad int not null
 )
 go
+create table Extras(
+IdExtras int Primary Key Identity (1,1),
+nombre varchar(45) not null,
+Precio int 
+)
 alter table TipoHabitaciones
 add Estado varchar(15) not null default 'Activo'
 go
+create table DetalleFactura(
+idDetalle int identity (1,1) primary Key,
+NumeroFactura int not null,
+FKreservacion int foreign Key references Reservacion(IdReservacion),
+FKHabitaciones int foreign Key references habitaciones(IdHabitacion),
+FKExtras int foreign Key references Extras(idExtras)
+)
+go
+
+
+create table factura(
+idFactura int primary key Identity (1,1),
+Fechafactura DateTime null Default GetDate(),
+FkUsuarios varchar(45) Foreign key references usuarios(UserName),
+
+
+)
