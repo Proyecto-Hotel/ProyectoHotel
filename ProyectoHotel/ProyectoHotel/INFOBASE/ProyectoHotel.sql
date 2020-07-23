@@ -30,21 +30,28 @@ go
 alter table TipoEmpleado
 add unique(Puesto)
 
-
+alter table TipoEmpleado 
+add Estado varchar(15) Null DEFAULT 'Activo'
+go
 create table Usuarios(
 UserName Varchar(45) primary Key not null,
 Psw Varchar(45) not null,
 )
 go
+alter table Usuarios 
+add Estado varchar(15) Null DEFAULT 'Activo'
+go
+
 alter table usuarios
 add Identidad  varchar(15) foreign key references Empleados(Identidad)
 
 create table Horarios(
 idHorarios int primary Key identity (1,1),
 Horarios Varchar(45) not null,
-Descripcion Varchar(45) not null,
+Descripcion Varchar(45)
 )
 go
+
 create table Huesped(
 Identidad Varchar(15) primary Key  not null,
 Nombre Varchar(45) not null,
@@ -70,17 +77,21 @@ add IdHuesped varchar(15) foreign Key references Huesped(Identidad) not null
 alter table Reservacion
 add IdHabitacion int foreign Key references habitaciones(IdHabitacion) not null
 go 
+alter table Reservacion
+add Estado varchar(15) not null default 'Activo'
 
 Create table habitaciones(
 IdHabitacion int Primary key,
 Precio int not null,
 )
 Alter table habitaciones 
-add Estado varchar(15) not null
+add Estado varchar(15) not null --Reservada o Libre--
 go
 alter table habitaciones
 add IdTipoHabitacion int foreign key references tipoHabitaciones(IdTipoHabitaciones)
 go
+alter table Habitaciones
+add Estado varchar(15) not null default 'Disponible'
 
 create table tipoHabitaciones(
 IdTipoHabitaciones int primary key identity (1,1),
@@ -88,4 +99,6 @@ Nombre varchar(45) not null,
 capacidad int not null
 )
 go
-
+alter table TipoHabitaciones
+add Estado varchar(15) not null default 'Activo'
+go

@@ -6,3 +6,25 @@ as
 Begin
 update Empleados set Estado = 'Eliminado' where Identidad = @Identidad
 ENd
+go
+
+create procedure EliminarHuesped(@Identidad Varchar(15))
+as
+Begin
+Update Huesped set Estado = 'Eliminado' where Identidad = @Identidad
+End
+go
+
+create procedure EliminarReservacion(@IdReservacion int)
+as
+Begin
+Update Reservacion set Estado = 'Eliminado' where IdReservacion = @IdReservacion
+End
+go
+create procedure EliminarTipoEmpleado(@id int )
+as
+Begin 
+update TipoEmpleado set Estado = 'Eliminado' where IdTipoEmpleado = @id
+END
+go 
+
