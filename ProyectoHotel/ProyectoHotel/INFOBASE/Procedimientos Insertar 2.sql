@@ -12,6 +12,9 @@ if exists (select Puesto from TipoEmpleado where puesto=@Puesto)raiserror('Error
 insert into TipoEmpleado(Puesto,Sueldo) values (@Puesto,@Sueldo)
 End
 go
+exec InsertarTipoEmpleado 'Gerente General', 15000
+select * from TipoEmpleado
+
 ----------------------------------TIPO HABITACION-------------------------------------
 create procedure IngresarTipoHabitacion(
 @Nombre varchar(45),
@@ -52,72 +55,80 @@ insert into Horarios(Horarios, Descripcion)
 values(@Horarios, @DEscripcion)
 End
 go
+
 -------------------------EMPLEADO--------------------
 create procedure insertarEmpleados
 -- Definicion de alias
 (@Identidad varchar(15),
 @Nombre varchar(45),
-@Apellido varchar,
+@Apellido varchar(45),
 @Telefono int,
 @CorreoElectronico Varchar(45),
 @RTN Varchar(16),
 @idTipoEmpleado int,
-@idHorario int,
-@Estado varchar(15))
-as begin
+@idHorario int
+)
+as
+begin
 if Exists (Select Identidad from Empleados where Identidad = @Identidad)
 raiserror('¡Error! Este numero de Identidad ya se ha registrado con un Empleado, Verifique su Informacion', 16, 1) 
 else
 insert into Empleados(Identidad, Nombre, Apellido, Telefono, CorreoElectronico, RTN, IdTipoElmpleado,
-IdHorarios, Estado)
+IdHorarios)
 values(@Identidad, @Nombre, @Apellido, @Telefono, @CorreoElectronico, @RTN, @idTipoEmpleado,
-@idHorario, @Estado)
+@idHorario)
 End
 go
+
 -----------------------HABITACION-------------------------
 create procedure insertarHabitacion
 -- Definicion de alias
 (@idHabitacion int,
 @idTipoHabitacion int,
-@Precio int,
-@Estado varchar(15))
+@Precio int
+)
 as begin
 if Exists (Select idHabitacion from habitaciones where IdHabitacion = @idHabitacion)
 raiserror('¡Error! Este Id ya asigno a una habitacion, Por favor intente con uno diferente', 16, 1) 
 else
-insert into habitaciones(IdHabitacion, IdTipoHabitacion, Precio, Estado)
-values(@idHabitacion ,@idTipoHabitacion, @Precio, @Estado)
+insert into habitaciones(IdHabitacion, IdTipoHabitacion, Precio)
+values(@idHabitacion ,@idTipoHabitacion, @Precio)
 End
 go
 -------------------RESERVACION---------------------------
-Create procedure InsertarReservacion
+-------------------Pendiente---------------------------
+create procedure InsertarReservacion(
 --Definicion de alias--
-(@IdReservacion int,
 @FechaReservacion dateTime,
 @CantidadDias int,
 @NumTarjeta Varchar(16),
 @IdHuesped varchar(15),
 @IdHabitacion int)
 As Begin
-if exists (Select IdReservacion from Reservacion where IdReservacion = @IdReservacion )
-raiserror('¡Error! La reservación ya existe, intente con otro Id', 16, 1)
+if exists (Select IdHabitacion from habitaciones where IdHabitacion = @IdHabitacion and estado = 'Reservado' )
+raiserror('¡Error! La Habitación ya esta Reservada, intente con otro Id', 16, 1)
 else
 Insert into Reservacion(IdReservacion, FechaReservacion, CantidadDias, NumTarjeta, IdHuesped,IdHabitacion )
 Values (@IdReservacion, @FechaReservacion, @CantidadDias, @NumTarjeta, @IdHuesped, @IdHabitacion)
+
 end
 go
+
+--exec InsertarReservacion 1,'2020-10-31 22:19:00',3,
 ------------------USUARIO--------------------
-Create procedure InsertarUsuario
+create procedure InsertarUsuario
 --Definicion de alias--
 (@UserName Varchar(45),
 @Psw Varchar(45),
 @Identidad  varchar(15))
 As Begin
-If exists(Select Identidad from Usuarios where Identidad = @Identidad )
-raiserror('¡Error! El usuario ya existe, Intente con otro Nombre de Usuario', 16, 1)
-Else
+If exists(Select Identidad, UserName from Usuarios where Identidad = @Identidad and UserName = @UserName)
+raiserror('¡Error! El usuario ya existe, Intente con otro Nombre de Usuario u otro Numero de Identidad', 16, 1)
+
+Else if Exists(Select Identidad from Empleados where Identidad <> @Identidad)
+raiserror('¡Error! El Empleado No existe, Verifique El numero de Identidad', 16, 1)
+else
 Insert Into Usuarios(UserName, Psw, Identidad)
 Values (@UserName, @Psw, @Identidad)
 end 
-
 

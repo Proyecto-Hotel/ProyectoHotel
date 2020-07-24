@@ -1,8 +1,6 @@
 ------------------------------CONSULTAR-------------------------------
 use ProyectoHotel
 go
-
-
 ------------------------------CONSULTAR HUESPED-------------------------------
 
 create procedure ListarHuesped
@@ -18,6 +16,7 @@ select Hu.Identidad as 'Identidad', CONCAT(Hu.Nombre,' ',Hu.Apellido) as 'Nombre
 Where @Identidad = Hu.Identidad and Hu.Estado = 'Activo'
 END
 go
+
 ------------------------------CONSULTAR EMPLEADOS-------------------------------
 Create procedure ListarEmpleados
 as
@@ -50,7 +49,8 @@ Begin
 Select Hab.IdHabitacion as 'Numero de Habitación', TpH.Nombre as 'Tipo Habitación',TpH.capacidad,Hab.Precio, Hab.Estado From habitaciones as Hab
 inner Join tipoHabitaciones as TpH on Hab.IdTipoHabitacion = TpH.IdTipoHabitaciones
 ENd 
-Create Procedure ConsultarHabitaciones(@IdHabitacion int)
+
+Create Procedure ConsultarHabitaciones(ConsultarHabitaciones int)
 as
 Begin
 Select Hab.IdHabitacion as 'Numero de Habitación', TpH.Nombre as 'Tipo Habitación',TpH.capacidad,Hab.Precio, Hab.Estado From habitaciones as Hab
