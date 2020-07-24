@@ -1,0 +1,14 @@
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.vbprojAssemblyReference.cache
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.Habitaciones.resources
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.MenuPrincipal.resources
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.Mantenimiento.resources
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.Resources.resources
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.vbproj.GenerateResource.cache
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.vbproj.CoreCompileInputs.cache
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\bin\Debug\ProyectoHotel.exe.config
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\bin\Debug\ProyectoHotel.exe
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\bin\Debug\ProyectoHotel.pdb
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\bin\Debug\ProyectoHotel.xml
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.exe
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.xml
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.pdb

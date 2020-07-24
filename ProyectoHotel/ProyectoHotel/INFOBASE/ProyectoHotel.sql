@@ -41,10 +41,10 @@ Psw Varchar(45) not null,
 go
 alter table Usuarios 
 add Estado varchar(15) Null DEFAULT 'Activo'
-go
-
 alter table usuarios
 add Identidad  varchar(15) foreign key references Empleados(Identidad)
+alter table usuarios
+add TipoEmpleado  int foreign key references TipoEmpleado(IdTipoEmpleado) not null
 
 create table Horarios(
 idHorarios int primary Key identity (1,1),
@@ -105,6 +105,11 @@ IdExtras int Primary Key Identity (1,1),
 nombre varchar(45) not null,
 Precio int 
 )
+go
+Alter table Extras
+add Unique(Nombre)
+
+
 alter table TipoHabitaciones
 add Estado varchar(15) not null default 'Activo'
 go
@@ -116,12 +121,14 @@ FKHabitaciones int foreign Key references habitaciones(IdHabitacion),
 FKExtras int foreign Key references Extras(idExtras)
 )
 go
+alter table detalleFactura
+add FkDetalleFactura int Foreign Key references DetalleFactura(idDetalle)
 
 
 create table factura(
 idFactura int primary key Identity (1,1),
 Fechafactura DateTime null Default GetDate(),
 FkUsuarios varchar(45) Foreign key references usuarios(UserName),
-
-
+FkHuesped varchar(15) Foreign key references Huesped(Identidad),
+FkDetalleFactura int Foreign Key References DetalleFactura(idDetalle)
 )

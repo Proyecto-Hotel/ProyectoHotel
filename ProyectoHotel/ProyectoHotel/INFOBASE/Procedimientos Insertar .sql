@@ -1,3 +1,5 @@
+
+
 use ProyectoHotel
 go
 ------------------------------INSERTAR-------------------------------
@@ -26,6 +28,8 @@ if exists (select Nombre from tipoHabitaciones where Nombre=@Nombre)raiserror('E
 insert into tipoHabitaciones(Nombre,capacidad) values (@Nombre,@Capacidad)
 End
 go
+exec IngresarTipoHabitacion 
+select * from TipoHabitaciones
 -------------------------------------HUESPED----------------------------------
 create procedure  IngresarHuesped(
 @Identidad varchar(15),
@@ -120,7 +124,8 @@ create procedure InsertarUsuario
 --Definicion de alias--
 (@UserName Varchar(45),
 @Psw Varchar(45),
-@Identidad  varchar(15))
+@Identidad  varchar(15),
+@Tipo int)
 As Begin
 If exists(Select Identidad, UserName from Usuarios where Identidad = @Identidad and UserName = @UserName)
 raiserror('¡Error! El usuario ya existe, Intente con otro Nombre de Usuario u otro Numero de Identidad', 16, 1)
@@ -128,7 +133,25 @@ raiserror('¡Error! El usuario ya existe, Intente con otro Nombre de Usuario u ot
 Else if Exists(Select Identidad from Empleados where Identidad <> @Identidad)
 raiserror('¡Error! El Empleado No existe, Verifique El numero de Identidad', 16, 1)
 else
-Insert Into Usuarios(UserName, Psw, Identidad)
-Values (@UserName, @Psw, @Identidad)
-end 
-
+Insert Into Usuarios(UserName, Psw, Identidad,TipoEmpleado)
+Values (@UserName, @Psw, @Identidad,@Tipo)
+END
+go
+------------------USUARIO--------------------
+create procedure InsertarExtras(
+@Nombre varchar(45),
+@Precio int
+)
+as 
+Begin
+If exists(Select nombre from Extras where nombre = @Nombre)
+raiserror('¡Error! El nombre de Extra ya existe, Intente con otro Nombre', 16, 1)
+else 
+insert into Extras(nombre, Precio)
+values (@Nombre, @Precio)
+END
+go
+exec InsertarExtras 'Jacuzzi',130
+select * from Extras
+go
+exec 
