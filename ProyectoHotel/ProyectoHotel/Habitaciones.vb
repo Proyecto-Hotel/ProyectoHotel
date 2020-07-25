@@ -1,4 +1,5 @@
-﻿Public Class Habitaciones
+﻿Imports System.Da
+Public Class Habitaciones
     Dim conexion As Conexion = New Conexion()
     Dim tabla As New DataTable
 
@@ -49,16 +50,39 @@
         End Try
     End Sub
 
-    Private Sub Habitaciones_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub BtnEditar_Click(sender As Object, e As EventArgs) Handles BtnEditar.Click
+        Dim Id, Precio, tipo As Integer
+        Id = Int(Val(TxtIdHabitacion.Text))
+        Precio = Int(txtPrecio.Text)
+        tipo = cmbTipo.SelectedIndex
 
+        Try
+            If conexion.actualizarHabitaciones(Id, Precio, 2) Then
+                MsgBox("Actualizado correctamente")
+            Else
+                MsgBox("Error al Actualizar")
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Limpiar()
+        End Try
     End Sub
 
-    Private Sub DataHabitaciones_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataHabitaciones.CellContentClick
-
-    End Sub
-
-    Private Sub DataHabitaciones_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataHabitaciones.CellContentDoubleClick
-
+    Private Sub BtnBuscar_Click(sender As Object, e As EventArgs) Handles BtnBuscar.Click
+        Try
+            Dim tabla As DataTable
+            Dim Id As Integer
+            Id = Int(Val(TxtIdHabitacion.Text))
+            tabla = conexion.ConsultarHabitaciones(Id)
+            If tabla.Rows.Count <> 0 Then
+                DataHabitaciones.DataSource = tabla
+            Else
+                DataHabitaciones.DataSource = Nothing
+            End If
+        Catch ex As Exception
+            MsgBox("Error al consultar")
+        End Try
     End Sub
 #End Region
 End Class

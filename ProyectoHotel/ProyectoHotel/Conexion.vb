@@ -194,14 +194,14 @@ Public Class Conexion
             conexion.Close()
         End Try
     End Function
-    Public Function actualizarHabitaciones(idHabitacion As Integer, Precio As Integer, estado As String) As Boolean
+    Public Function actualizarHabitaciones(idHabitacion As Integer, Precio As Integer, IdTipoHabitacion As String) As Boolean
         Try
             conexion.Open()
             Dim cmd As New SqlCommand("actualizarHabitaciones", conexion)
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Parameters.AddWithValue("@idHabitacion", idHabitacion)
             cmd.Parameters.AddWithValue("@Precio", Precio)
-            cmd.Parameters.AddWithValue("@Estado", estado)
+            cmd.Parameters.AddWithValue("@IdTipoHabitacion", IdTipoHabitacion)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else
@@ -353,7 +353,7 @@ Public Class Conexion
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Parameters.AddWithValue("@Identidad", Identidad)
 
-            If cmd.ExecuteNonQuery > 0 Then
+            If cmd.ExecuteNonQuery <> 0 Then
                 Dim Tabla As New DataTable
                 Dim adaptador As New SqlDataAdapter(cmd)
                 adaptador.Fill(Tabla)
@@ -443,13 +443,15 @@ Public Class Conexion
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Parameters.AddWithValue("@IdHabitacion", IdHabitacion)
 
-            If cmd.ExecuteNonQuery > 0 Then
+            If cmd.ExecuteNonQuery <> 0 Then
                 Dim Tabla As New DataTable
                 Dim adaptador As New SqlDataAdapter(cmd)
                 adaptador.Fill(Tabla)
+                Dim x As Integer
+                x = Tabla.Rows.Count
                 Return Tabla
             Else
-                Return Nothing
+                Return -1
             End If
         Catch ex As Exception
             Return Nothing
