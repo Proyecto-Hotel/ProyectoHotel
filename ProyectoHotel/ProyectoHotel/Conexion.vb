@@ -303,7 +303,7 @@ Public Class Conexion
             conexion.Close()
         End Try
     End Function
-    Public Function actualizarUsuarios(userName As Integer, Psw As Integer, Identidad As Integer) As Boolean
+    Public Function actualizarUsuarios(userName As String, Psw As String, Identidad As Integer) As Boolean
         Try
             conexion.Open()
             Dim cmd As New SqlCommand("actualizarUsuarios", conexion)
@@ -346,7 +346,6 @@ Public Class Conexion
         End Try
     End Function
     Public Function consultarHuesped(Identidad As String)
-
         Try
             conexion.Open()
             Dim cmd As New SqlCommand("consultarHuesped", conexion)

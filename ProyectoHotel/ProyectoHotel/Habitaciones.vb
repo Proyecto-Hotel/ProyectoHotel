@@ -1,5 +1,4 @@
-﻿Imports System.Da
-Public Class Habitaciones
+﻿Public Class Habitaciones
     Dim conexion As Conexion = New Conexion()
     Dim tabla As New DataTable
 
@@ -83,6 +82,10 @@ Public Class Habitaciones
         Catch ex As Exception
             MsgBox("Error al consultar")
         End Try
+    End Sub
+
+    Private Sub Habitaciones_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 #End Region
 End Class

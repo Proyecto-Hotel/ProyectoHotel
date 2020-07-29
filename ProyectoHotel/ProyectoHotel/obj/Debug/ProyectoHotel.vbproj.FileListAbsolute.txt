@@ -12,3 +12,4 @@ C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHote
 C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.exe
 C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.xml
 C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.pdb
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.Usuarios.resources

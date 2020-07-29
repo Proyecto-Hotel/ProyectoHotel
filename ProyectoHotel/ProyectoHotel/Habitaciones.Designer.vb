@@ -95,7 +95,7 @@ Partial Class Habitaciones
         '
         'BtnAgregar
         '
-        Me.BtnAgregar.Location = New System.Drawing.Point(564, 88)
+        Me.BtnAgregar.Location = New System.Drawing.Point(609, 86)
         Me.BtnAgregar.Name = "BtnAgregar"
         Me.BtnAgregar.Size = New System.Drawing.Size(104, 28)
         Me.BtnAgregar.TabIndex = 10
@@ -133,7 +133,7 @@ Partial Class Habitaciones
         '
         'BtnEditar
         '
-        Me.BtnEditar.Location = New System.Drawing.Point(564, 134)
+        Me.BtnEditar.Location = New System.Drawing.Point(609, 132)
         Me.BtnEditar.Name = "BtnEditar"
         Me.BtnEditar.Size = New System.Drawing.Size(104, 28)
         Me.BtnEditar.TabIndex = 14
@@ -142,7 +142,7 @@ Partial Class Habitaciones
         '
         'BtnListar
         '
-        Me.BtnListar.Location = New System.Drawing.Point(564, 51)
+        Me.BtnListar.Location = New System.Drawing.Point(609, 49)
         Me.BtnListar.Name = "BtnListar"
         Me.BtnListar.Size = New System.Drawing.Size(104, 28)
         Me.BtnListar.TabIndex = 15
