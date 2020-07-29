@@ -87,6 +87,12 @@
     <Compile Include="Extras.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="LoginUsuario.Designer.vb">
+      <DependentUpon>LoginUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MenuPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +149,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Habitaciones.resx">
       <DependentUpon>Habitaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginUsuario.resx">
+      <DependentUpon>LoginUsuario.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.vb</DependentUpon>
