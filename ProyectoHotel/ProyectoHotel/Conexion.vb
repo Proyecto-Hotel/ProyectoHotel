@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Public Class Conexion
-    Public conexion As SqlConnection = New SqlConnection("Data Source = CHANDIA;Initial Catalog=ProyectoHotel;Integrated Security=True")
+    Public conexion As SqlConnection = New SqlConnection("Data Source = LAPTOP-GK4VNBDO\SQLEXPRESS;Initial Catalog=ProyectoHotel;Integrated Security=True")
 
     Public Sub Abrirconexion()
         Try
@@ -145,7 +145,8 @@ Public Class Conexion
             conexion.Close()
         End Try
     End Function
-    Public Function InsertarUsuario(userName As Integer, Psw As Integer, Identidad As Integer) As Boolean
+
+    Public Function InsertarUsuario(userName As String, Psw As String, Identidad As String, TipoEmpleado As Integer) As Boolean
         Try
             conexion.Open()
             Dim cmd As New SqlCommand("InsertarUsuario", conexion)
@@ -153,6 +154,7 @@ Public Class Conexion
             cmd.Parameters.AddWithValue("@UserName", userName)
             cmd.Parameters.AddWithValue("@Psw", Psw)
             cmd.Parameters.AddWithValue("@Identidad", Identidad)
+            cmd.Parameters.AddWithValue("@TipoEmpleado", TipoEmpleado)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else
@@ -165,6 +167,7 @@ Public Class Conexion
             conexion.Close()
         End Try
     End Function
+
     Public Function actualizarEmpleados(Identidad As String, Nombre As String, Apellido As String,
                                         Telefono As Integer, Correo As String, RTN As String, idTipoEmpleado As Integer, idHorario As Integer) As Boolean
 
@@ -647,6 +650,27 @@ Public Class Conexion
         Catch ex As Exception
             MsgBox(ex.Message)
             MsgBox("Error al eliminar Tipo Empleado")
+            Return False
+        Finally
+            conexion.Close()
+        End Try
+
+    End Function
+
+    Public Function ValidarUsuario(userName As String, Psw As String)
+        Try
+            conexion.Open()
+            Dim cmd = New SqlCommand("ValidarUsuario", conexion)
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Parameters.AddWithValue("@userName", userName)
+            cmd.Parameters.AddWithValue("@Psw", Psw)
+            If cmd.ExecuteNonQuery <> 0 Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
             Return False
         Finally
             conexion.Close()

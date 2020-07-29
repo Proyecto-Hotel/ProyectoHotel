@@ -133,7 +133,7 @@ Partial Class MenuPrincipal
         Me.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEmpleados.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEmpleados.ForeColor = System.Drawing.Color.Gainsboro
-        Me.btnEmpleados.Image = Global.ProyectoHotel.My.Resources.Resources.Empleado_2
+        'Me.btnEmpleados.Image = Global.ProyectoHotel.My.Resources.Resources.Empleado_2
         Me.btnEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnEmpleados.Location = New System.Drawing.Point(0, 93)
         Me.btnEmpleados.Name = "btnEmpleados"
