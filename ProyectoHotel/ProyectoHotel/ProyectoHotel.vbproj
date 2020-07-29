@@ -141,6 +141,9 @@
     <Compile Include="Variables.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Empleados.resx">
+      <DependentUpon>Empleados.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Habitaciones.resx">
       <DependentUpon>Habitaciones.vb</DependentUpon>
     </EmbeddedResource>
