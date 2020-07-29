@@ -22,5 +22,95 @@ ProyectoHotel
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
+<member name="P:ProyectoHotel.My.Resources.Resources.Buscar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ProyectoHotel.My.Resources.Resources.Empleado_2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ProyectoHotel.My.Resources.Resources.Empleado_21">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ProyectoHotel.My.Resources.Resources.Empleado_3">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ProyectoHotel.My.Resources.Resources.Empleado_31">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ProyectoHotel.My.Resources.Resources.Extra1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ProyectoHotel.My.Resources.Resources.Extra2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ProyectoHotel.My.Resources.Resources.Habitacion_1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ProyectoHotel.My.Resources.Resources.Habitacion_2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ProyectoHotel.My.Resources.Resources.Habitacion_21">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ProyectoHotel.My.Resources.Resources.Horario">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ProyectoHotel.My.Resources.Resources.Huesped">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ProyectoHotel.My.Resources.Resources.Huesped2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ProyectoHotel.My.Resources.Resources.Logo_Hotel">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ProyectoHotel.My.Resources.Resources.Logo_Hotel1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ProyectoHotel.My.Resources.Resources.Mantenimiento">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ProyectoHotel.My.Resources.Resources.Reservaciones1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ProyectoHotel.My.Resources.Resources.salir">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>

@@ -118,5 +118,58 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  
+  <data name="Reservaciones1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Reservaciones1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Extra1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Extra1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Empleado 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Empleado 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo Hotel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo Hotel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Empleado 31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Empleado 31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Buscar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Buscar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Empleado 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Iconos Hotel\Empleado 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Extra2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Extra2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Habitacion 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Habitacion 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mantenimiento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mantenimiento.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="salir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Empleado 21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Empleado 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Horario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Horario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo Hotel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo Hotel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Huesped2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Huesped2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Huesped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Huesped.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Habitacion 21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Habitacion 21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Habitacion 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Habitacion 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

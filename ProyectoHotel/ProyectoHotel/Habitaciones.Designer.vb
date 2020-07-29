@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class Habitaciones
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()>
+    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,170 +20,254 @@ Partial Class Habitaciones
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()>
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.cmbTipo = New System.Windows.Forms.ComboBox()
-        Me.TxtIdHabitacion = New System.Windows.Forms.MaskedTextBox()
-        Me.txtPrecio = New System.Windows.Forms.MaskedTextBox()
-        Me.BtnAgregar = New System.Windows.Forms.Button()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.DataHabitaciones = New System.Windows.Forms.DataGridView()
-        Me.PanelDG = New System.Windows.Forms.Panel()
-        Me.BtnBuscar = New System.Windows.Forms.Button()
-        Me.BtnEditar = New System.Windows.Forms.Button()
-        Me.BtnListar = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.txtPrecio = New System.Windows.Forms.TextBox()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.TxtIdHabitacion = New System.Windows.Forms.TextBox()
+        Me.cmbTipo = New System.Windows.Forms.ComboBox()
+        Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.btnActualizar = New System.Windows.Forms.Button()
+        Me.btnGuardar = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel10 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.txtBuscar = New System.Windows.Forms.TextBox()
         CType(Me.DataHabitaciones, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.PanelDG.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'DataHabitaciones
+        '
+        Me.DataHabitaciones.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.DataHabitaciones.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.DataHabitaciones.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
+        Me.DataHabitaciones.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(18, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Info
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(18, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataHabitaciones.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.DataHabitaciones.ColumnHeadersHeight = 30
+        Me.DataHabitaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        Me.DataHabitaciones.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.DataHabitaciones.EnableHeadersVisualStyles = False
+        Me.DataHabitaciones.GridColor = System.Drawing.Color.Gray
+        Me.DataHabitaciones.Location = New System.Drawing.Point(0, 229)
+        Me.DataHabitaciones.Name = "DataHabitaciones"
+        Me.DataHabitaciones.ReadOnly = True
+        Me.DataHabitaciones.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(48, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Info
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(66, Byte), Integer))
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataHabitaciones.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.DataHabitaciones.RowHeadersVisible = False
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(48, Byte), Integer))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.NullValue = Nothing
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.DataHabitaciones.RowsDefaultCellStyle = DataGridViewCellStyle3
+        Me.DataHabitaciones.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.DataHabitaciones.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.DataHabitaciones.Size = New System.Drawing.Size(641, 194)
+        Me.DataHabitaciones.TabIndex = 17
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.LightGray
+        Me.Panel1.Location = New System.Drawing.Point(61, 101)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(168, 1)
+        Me.Panel1.TabIndex = 54
+        '
+        'txtPrecio
+        '
+        Me.txtPrecio.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.txtPrecio.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtPrecio.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPrecio.ForeColor = System.Drawing.Color.LightGray
+        Me.txtPrecio.Location = New System.Drawing.Point(61, 82)
+        Me.txtPrecio.Name = "txtPrecio"
+        Me.txtPrecio.Size = New System.Drawing.Size(179, 20)
+        Me.txtPrecio.TabIndex = 53
+        Me.txtPrecio.Text = "Precio"
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.LightGray
+        Me.Panel3.Location = New System.Drawing.Point(61, 65)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(168, 1)
+        Me.Panel3.TabIndex = 52
+        '
+        'TxtIdHabitacion
+        '
+        Me.TxtIdHabitacion.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.TxtIdHabitacion.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TxtIdHabitacion.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtIdHabitacion.ForeColor = System.Drawing.Color.LightGray
+        Me.TxtIdHabitacion.Location = New System.Drawing.Point(61, 46)
+        Me.TxtIdHabitacion.MaxLength = 2
+        Me.TxtIdHabitacion.Name = "TxtIdHabitacion"
+        Me.TxtIdHabitacion.Size = New System.Drawing.Size(179, 20)
+        Me.TxtIdHabitacion.TabIndex = 51
+        Me.TxtIdHabitacion.Text = "Número de Habitación"
+        '
+        'cmbTipo
+        '
+        Me.cmbTipo.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.cmbTipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cmbTipo.ForeColor = System.Drawing.Color.LightGray
+        Me.cmbTipo.FormattingEnabled = True
+        Me.cmbTipo.Location = New System.Drawing.Point(61, 116)
+        Me.cmbTipo.Name = "cmbTipo"
+        Me.cmbTipo.Size = New System.Drawing.Size(168, 21)
+        Me.cmbTipo.TabIndex = 55
+        Me.cmbTipo.Text = "Tipo"
+        '
+        'btnEliminar
+        '
+        Me.btnEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer))
+        Me.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.Goldenrod
+        Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEliminar.ForeColor = System.Drawing.Color.LightGray
+        Me.btnEliminar.Location = New System.Drawing.Point(313, 121)
+        Me.btnEliminar.Name = "btnEliminar"
+        Me.btnEliminar.Size = New System.Drawing.Size(168, 24)
+        Me.btnEliminar.TabIndex = 70
+        Me.btnEliminar.Text = "Eliminar"
+        Me.btnEliminar.UseVisualStyleBackColor = False
+        '
+        'btnActualizar
+        '
+        Me.btnActualizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer))
+        Me.btnActualizar.FlatAppearance.BorderColor = System.Drawing.Color.Goldenrod
+        Me.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnActualizar.ForeColor = System.Drawing.Color.LightGray
+        Me.btnActualizar.Location = New System.Drawing.Point(313, 91)
+        Me.btnActualizar.Name = "btnActualizar"
+        Me.btnActualizar.Size = New System.Drawing.Size(168, 24)
+        Me.btnActualizar.TabIndex = 69
+        Me.btnActualizar.Text = "Actualizar"
+        Me.btnActualizar.UseVisualStyleBackColor = False
+        '
+        'btnGuardar
+        '
+        Me.btnGuardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer))
+        Me.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.Goldenrod
+        Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnGuardar.ForeColor = System.Drawing.Color.LightGray
+        Me.btnGuardar.Location = New System.Drawing.Point(313, 61)
+        Me.btnGuardar.Name = "btnGuardar"
+        Me.btnGuardar.Size = New System.Drawing.Size(168, 24)
+        Me.btnGuardar.TabIndex = 68
+        Me.btnGuardar.Text = "Guardar"
+        Me.btnGuardar.UseVisualStyleBackColor = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(49, 95)
+        Me.Label1.Font = New System.Drawing.Font("Lucida Sans Unicode", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.LightGray
+        Me.Label1.Location = New System.Drawing.Point(31, 7)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(52, 17)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Precio:"
+        Me.Label1.Size = New System.Drawing.Size(102, 18)
+        Me.Label1.TabIndex = 71
+        Me.Label1.Text = "Habitaciones"
         '
-        'Label2
+        'Panel10
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(49, 60)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(153, 17)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Numero de Habitación:"
+        Me.Panel10.BackColor = System.Drawing.Color.Goldenrod
+        Me.Panel10.Location = New System.Drawing.Point(0, 192)
+        Me.Panel10.Name = "Panel10"
+        Me.Panel10.Size = New System.Drawing.Size(641, 1)
+        Me.Panel10.TabIndex = 72
         '
-        'Label4
+        'PictureBox1
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(49, 140)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(111, 17)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Tipo Habitación:"
+        Me.PictureBox1.Image = Global.ProyectoHotel.My.Resources.Resources.Buscar
+        Me.PictureBox1.Location = New System.Drawing.Point(239, 197)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(23, 19)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 75
+        Me.PictureBox1.TabStop = False
         '
-        'cmbTipo
+        'Panel11
         '
-        Me.cmbTipo.FormattingEnabled = True
-        Me.cmbTipo.Location = New System.Drawing.Point(208, 133)
-        Me.cmbTipo.Name = "cmbTipo"
-        Me.cmbTipo.Size = New System.Drawing.Size(121, 24)
-        Me.cmbTipo.TabIndex = 7
+        Me.Panel11.BackColor = System.Drawing.Color.LightGray
+        Me.Panel11.Location = New System.Drawing.Point(12, 218)
+        Me.Panel11.Name = "Panel11"
+        Me.Panel11.Size = New System.Drawing.Size(250, 1)
+        Me.Panel11.TabIndex = 74
         '
-        'TxtIdHabitacion
+        'txtBuscar
         '
-        Me.TxtIdHabitacion.Location = New System.Drawing.Point(209, 54)
-        Me.TxtIdHabitacion.Mask = "99"
-        Me.TxtIdHabitacion.Name = "TxtIdHabitacion"
-        Me.TxtIdHabitacion.Size = New System.Drawing.Size(54, 22)
-        Me.TxtIdHabitacion.TabIndex = 8
-        Me.TxtIdHabitacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.TxtIdHabitacion.ValidatingType = GetType(Integer)
-        '
-        'txtPrecio
-        '
-        Me.txtPrecio.Location = New System.Drawing.Point(209, 92)
-        Me.txtPrecio.Mask = "99999"
-        Me.txtPrecio.Name = "txtPrecio"
-        Me.txtPrecio.Size = New System.Drawing.Size(34, 22)
-        Me.txtPrecio.TabIndex = 9
-        Me.txtPrecio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.txtPrecio.ValidatingType = GetType(Integer)
-        '
-        'BtnAgregar
-        '
-        Me.BtnAgregar.Location = New System.Drawing.Point(609, 86)
-        Me.BtnAgregar.Name = "BtnAgregar"
-        Me.BtnAgregar.Size = New System.Drawing.Size(104, 28)
-        Me.BtnAgregar.TabIndex = 10
-        Me.BtnAgregar.Text = "Ingresar"
-        Me.BtnAgregar.UseVisualStyleBackColor = True
-        '
-        'DataHabitaciones
-        '
-        Me.DataHabitaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataHabitaciones.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataHabitaciones.Location = New System.Drawing.Point(0, 0)
-        Me.DataHabitaciones.Name = "DataHabitaciones"
-        Me.DataHabitaciones.RowHeadersWidth = 51
-        Me.DataHabitaciones.RowTemplate.Height = 24
-        Me.DataHabitaciones.Size = New System.Drawing.Size(801, 189)
-        Me.DataHabitaciones.TabIndex = 11
-        '
-        'PanelDG
-        '
-        Me.PanelDG.Controls.Add(Me.DataHabitaciones)
-        Me.PanelDG.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PanelDG.Location = New System.Drawing.Point(0, 285)
-        Me.PanelDG.Name = "PanelDG"
-        Me.PanelDG.Size = New System.Drawing.Size(801, 189)
-        Me.PanelDG.TabIndex = 12
-        '
-        'BtnBuscar
-        '
-        Me.BtnBuscar.Location = New System.Drawing.Point(284, 49)
-        Me.BtnBuscar.Name = "BtnBuscar"
-        Me.BtnBuscar.Size = New System.Drawing.Size(104, 28)
-        Me.BtnBuscar.TabIndex = 13
-        Me.BtnBuscar.Text = "Buscar"
-        Me.BtnBuscar.UseVisualStyleBackColor = True
-        '
-        'BtnEditar
-        '
-        Me.BtnEditar.Location = New System.Drawing.Point(609, 132)
-        Me.BtnEditar.Name = "BtnEditar"
-        Me.BtnEditar.Size = New System.Drawing.Size(104, 28)
-        Me.BtnEditar.TabIndex = 14
-        Me.BtnEditar.Text = "Editar"
-        Me.BtnEditar.UseVisualStyleBackColor = True
-        '
-        'BtnListar
-        '
-        Me.BtnListar.Location = New System.Drawing.Point(609, 49)
-        Me.BtnListar.Name = "BtnListar"
-        Me.BtnListar.Size = New System.Drawing.Size(104, 28)
-        Me.BtnListar.TabIndex = 15
-        Me.BtnListar.Text = "Listar"
-        Me.BtnListar.UseVisualStyleBackColor = True
+        Me.txtBuscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.txtBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtBuscar.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBuscar.ForeColor = System.Drawing.Color.LightGray
+        Me.txtBuscar.Location = New System.Drawing.Point(12, 199)
+        Me.txtBuscar.Name = "txtBuscar"
+        Me.txtBuscar.Size = New System.Drawing.Size(179, 20)
+        Me.txtBuscar.TabIndex = 73
+        Me.txtBuscar.Text = "Buscar"
         '
         'Habitaciones
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(801, 474)
-        Me.Controls.Add(Me.BtnListar)
-        Me.Controls.Add(Me.BtnEditar)
-        Me.Controls.Add(Me.BtnBuscar)
-        Me.Controls.Add(Me.PanelDG)
-        Me.Controls.Add(Me.BtnAgregar)
-        Me.Controls.Add(Me.txtPrecio)
-        Me.Controls.Add(Me.TxtIdHabitacion)
-        Me.Controls.Add(Me.cmbTipo)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label2)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(641, 423)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Panel11)
+        Me.Controls.Add(Me.txtBuscar)
+        Me.Controls.Add(Me.Panel10)
         Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.btnEliminar)
+        Me.Controls.Add(Me.btnActualizar)
+        Me.Controls.Add(Me.btnGuardar)
+        Me.Controls.Add(Me.cmbTipo)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.txtPrecio)
+        Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.TxtIdHabitacion)
+        Me.Controls.Add(Me.DataHabitaciones)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Habitaciones"
         Me.Text = "Habitaciones"
         CType(Me.DataHabitaciones, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.PanelDG.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents cmbTipo As ComboBox
-    Friend WithEvents TxtIdHabitacion As MaskedTextBox
-    Friend WithEvents txtPrecio As MaskedTextBox
-    Friend WithEvents BtnAgregar As Button
     Friend WithEvents DataHabitaciones As DataGridView
-    Friend WithEvents PanelDG As Panel
-    Friend WithEvents BtnBuscar As Button
-    Friend WithEvents BtnEditar As Button
-    Friend WithEvents BtnListar As Button
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents txtPrecio As TextBox
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents TxtIdHabitacion As TextBox
+    Friend WithEvents cmbTipo As ComboBox
+    Friend WithEvents btnEliminar As Button
+    Friend WithEvents btnActualizar As Button
+    Friend WithEvents btnGuardar As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Panel10 As Panel
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Panel11 As Panel
+    Friend WithEvents txtBuscar As TextBox
 End Class
