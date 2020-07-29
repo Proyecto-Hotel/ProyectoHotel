@@ -3,7 +3,7 @@
     Dim tabla As New DataTable
 
 
-    Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles BtnAgregar.Click
+    Private Sub BtnAgregar_Click(sender As Object, e As EventArgs)
         If TxtIdHabitacion.Text = "" Or txtPrecio.Text = "" Or txtPrecio.Text = "" Or cmbTipo.Text = "" Then
             MessageBox.Show("Debe llenar todas las casillas ", "Error")
             Exit Sub
@@ -35,49 +35,14 @@
         cmbTipo.Text = ""
     End Sub
 
-    Private Sub BtnListar_Click(sender As Object, e As EventArgs) Handles BtnListar.Click
+    Private Sub BtnListar_Click(sender As Object, e As EventArgs)
         Try
             Dim tabla As DataTable
             tabla = conexion.ListarHabitaciones()
             If tabla.Rows.Count <> 0 Then
-                dtgDatos.DataSource = tabla
+                DataHabitaciones.DataSource = tabla
             Else
-                dtgDatos.DataSource = Nothing
-            End If
-        Catch ex As Exception
-            MsgBox("Error al consultar")
-        End Try
-    End Sub
-
-    Private Sub BtnEditar_Click(sender As Object, e As EventArgs) Handles BtnEditar.Click
-        Dim Id, Precio, tipo As Integer
-        Id = Int(Val(TxtIdHabitacion.Text))
-        Precio = Int(txtPrecio.Text)
-        tipo = cmbTipo.SelectedIndex
-
-        Try
-            If conexion.actualizarHabitaciones(Id, Precio, 2) Then
-                MsgBox("Actualizado correctamente")
-            Else
-                MsgBox("Error al Actualizar")
-            End If
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        Finally
-            Limpiar()
-        End Try
-    End Sub
-
-    Private Sub BtnBuscar_Click(sender As Object, e As EventArgs) Handles BtnBuscar.Click
-        Try
-            Dim tabla As DataTable
-            Dim Id As Integer
-            Id = Int(Val(TxtIdHabitacion.Text))
-            tabla = conexion.ConsultarHabitaciones(Id)
-            If tabla.Rows.Count <> 0 Then
-                dtgDatos.DataSource = tabla
-            Else
-                dtgDatos.DataSource = Nothing
+                DataHabitaciones.DataSource = Nothing
             End If
         Catch ex As Exception
             MsgBox("Error al consultar")
@@ -88,11 +53,16 @@
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        My.Forms.Usuarios.Show()
-        Me.Hide()
+    Private Sub DataHabitaciones_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
+
     End Sub
 
+    Private Sub DataHabitaciones_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs)
 
+    End Sub
+
+    Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
+
+    End Sub
 #End Region
 End Class
