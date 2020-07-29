@@ -126,16 +126,15 @@ go
 Alter procedure actualizarUsuarios(
 	
 	@UserName varchar(45),
-	@Psw varchar(45),
-	@Identidad varchar(15)
+	@Psw varchar(45)
 )
 as begin 
-	if exists(select @Identidad from Usuarios where Identidad=@Identidad)
+	if exists(select UserName from Usuarios where UserName=@UserName)
 	update Usuarios
-	set UserName=@UserName, Psw=@Psw
-	where Identidad=@Identidad
+	set Psw=@Psw
+	where UserName=@UserName
 	else
 		raiserror('El Usuario no puede ser modificado, Ingrese otro Usuario',16,1)
 end
 go
-
+select * from Usuarios

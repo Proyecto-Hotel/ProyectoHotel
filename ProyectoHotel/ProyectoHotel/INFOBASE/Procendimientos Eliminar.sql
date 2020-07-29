@@ -28,13 +28,14 @@ update TipoEmpleado set Estado = 'Eliminado' where IdTipoEmpleado = @id
 END
 go 
 
-create procedure EliminarUsuario(@UserName as Varchar(45) )
+alter procedure EliminarUsuario(@UserName as Varchar(45) )
 as
 Begin
 if exists (select UserName from Usuarios where UserName = @UserName and Estado = 'Activo')
-update Usuarios set Estado = 'Eliminado'
+update Usuarios set Estado = 'Eliminado'  where UserName = @UserName
 else
 raiserror('Error!! Este Usuario no existe, utiliza otro por favor', 16, 1)
 end
 go
+select * from Usuarios
 
