@@ -3,8 +3,7 @@
     Dim tabla As New DataTable
     Private Sub BtnListar_Click(sender As Object, e As EventArgs) Handles BtnListar.Click
         Try
-            Dim tabla As DataTable
-            tabla = Conexion.ListarUsuarios()
+            tabla = conexion.ListarUsuarios()
             If tabla.Rows.Count <> 0 Then
                 DataHabitaciones.DataSource = tabla
             Else
@@ -68,4 +67,5 @@
             Limpiar()
         End Try
     End Sub
+
 End Class
