@@ -3,7 +3,7 @@
     Dim tabla As New DataTable
 
 
-    Private Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles BtnAgregar.Click
+    Private Sub BtnAgregar_Click(sender As Object, e As EventArgs)
         If TxtIdHabitacion.Text = "" Or txtPrecio.Text = "" Or txtPrecio.Text = "" Or cmbTipo.Text = "" Then
             MessageBox.Show("Debe llenar todas las casillas ", "Error")
             Exit Sub
@@ -35,7 +35,7 @@
         cmbTipo.Text = ""
     End Sub
 
-    Private Sub BtnListar_Click(sender As Object, e As EventArgs) Handles BtnListar.Click
+    Private Sub BtnListar_Click(sender As Object, e As EventArgs)
         Try
             Dim tabla As DataTable
             tabla = conexion.ListarHabitaciones()
@@ -53,11 +53,11 @@
 
     End Sub
 
-    Private Sub DataHabitaciones_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataHabitaciones.CellContentClick
+    Private Sub DataHabitaciones_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
 
     End Sub
 
-    Private Sub DataHabitaciones_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataHabitaciones.CellContentDoubleClick
+    Private Sub DataHabitaciones_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs)
 
     End Sub
 #End Region

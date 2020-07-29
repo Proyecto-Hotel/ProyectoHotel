@@ -73,7 +73,19 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clientes.Designer.vb">
+      <DependentUpon>Clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Conexion.vb" />
+    <Compile Include="DiseñoDTGV.Designer.vb">
+      <DependentUpon>DiseñoDTGV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DiseñoDTGV.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Empleados.Designer.vb">
       <DependentUpon>Empleados.vb</DependentUpon>
     </Compile>
@@ -84,6 +96,12 @@
       <DependentUpon>Extras.vb</DependentUpon>
     </Compile>
     <Compile Include="Extras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.vb">
+      <DependentUpon>LOGIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuPrincipal.vb">
@@ -140,8 +158,26 @@
     <Compile Include="Variables.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiseñoDTGV.resx">
+      <DependentUpon>DiseñoDTGV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleados.resx">
+      <DependentUpon>Empleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extras.resx">
+      <DependentUpon>Extras.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Habitaciones.resx">
       <DependentUpon>Habitaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Horarios.resx">
+      <DependentUpon>Horarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.vb</DependentUpon>
@@ -154,6 +190,12 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoHabitacion.resx">
+      <DependentUpon>TipoHabitacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios.resx">
+      <DependentUpon>Usuarios.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -170,6 +212,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Iconos Hotel\Empleado 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Empleado 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Huesped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Huesped2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reservaciones1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Hotel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Hotel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Empleado 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mantenimiento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Extra1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Extra2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Horario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Habitacion 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Empleado 31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Habitacion 21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Habitacion 1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
