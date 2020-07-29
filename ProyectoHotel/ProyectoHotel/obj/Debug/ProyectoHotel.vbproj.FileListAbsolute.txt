@@ -13,3 +13,7 @@ C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHote
 C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.xml
 C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.pdb
 C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.Usuarios.resources
+C:\Users\Johan Urbina\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.vbprojAssemblyReference.cache
+C:\Users\Johan Urbina\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.exe
+C:\Users\Johan Urbina\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.xml
+C:\Users\Johan Urbina\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.pdb
