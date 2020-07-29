@@ -46,6 +46,8 @@ insert into Huesped(Identidad,Nombre,Apellido,Telefono,CorreoElectronico,RTN)
 values (@Identidad,@Nombre,@Apellido,@Telefono,@Correo,@RTN)
 End
 go
+
+select * from Usuarios
 -------------------------------HORARIOS------------------------------------------
 create procedure InsertarHorarios
 -- Definicion de alias
@@ -59,7 +61,6 @@ insert into Horarios(Horarios, Descripcion)
 values(@Horarios, @DEscripcion)
 End
 go
-select * from Usuarios
 
 -------------------------EMPLEADO--------------------
 create procedure insertarEmpleados
@@ -84,8 +85,7 @@ values(@Identidad, @Nombre, @Apellido, @Telefono, @CorreoElectronico, @RTN, @idT
 @idHorario)
 End
 go
-select * from Horarios
-exec insertarEmpleados '0501-2001-10666','Elmer','Chandia',33122949,'Elmerchandia0615@gmail.com',null,7,2
+
 -----------------------HABITACION-------------------------
 create procedure insertarHabitacion
 -- Definicion de alias
@@ -95,7 +95,7 @@ create procedure insertarHabitacion
 )
 as begin
 if Exists (Select idHabitacion from habitaciones where IdHabitacion = @idHabitacion)
-raiserror('¡Error! Este Id ya asigno a una habitacion, Por favor intente con uno diferente', 16, 2) 
+raiserror('¡Error! Este Id ya asigno a una habitacion, Por favor intente con uno diferente', 16, 1) 
 else
 insert into habitaciones(IdHabitacion, IdTipoHabitacion, Precio)
 values(@idHabitacion ,@idTipoHabitacion, @Precio)
@@ -122,41 +122,23 @@ go
 
 --exec InsertarReservacion 1,'2020-10-31 22:19:00',3,
 ------------------USUARIO--------------------
-alter procedure InsertarUsuario
+create procedure InsertarUsuario
 --Definicion de alias--
 (@UserName Varchar(45),
 @Psw Varchar(45),
 @Identidad  varchar(15),
-@Tipo Varchar(45))
-
+@Tipo int)
 As Begin
-declare @ID INT
- set @ID = (select IdTipoEmpleado  from TipoEmpleado where Puesto = 'Gerente General')
-
-If exists(Select Identidad, UserName from Usuarios where Identidad = @Identidad or UserName = @UserName)
+If exists(Select Identidad, UserName from Usuarios where Identidad = @Identidad and UserName = @UserName)
 raiserror('¡Error! El usuario ya existe, Intente con otro Nombre de Usuario u otro Numero de Identidad', 16, 1)
 
-Else if not Exists(Select Identidad from Empleados where Identidad = @Identidad)
+Else if Exists(Select Identidad from Empleados where Identidad <> @Identidad)
 raiserror('¡Error! El Empleado No existe, Verifique El numero de Identidad', 16, 1)
-
-else if  Exists(Select IdTipoEmpleado from TipoEmpleado where TipoEmpleado.IdTipoEmpleado <> @ID)
-raiserror('¡Error! este Tipo de Empleado No existe', 16, 1)
-
 else
-
 Insert Into Usuarios(UserName, Psw, Identidad,TipoEmpleado)
-Values (@UserName, @Psw, @Identidad,@ID)
+Values (@UserName, @Psw, @Identidad,@Tipo)
 END
 go
-select * from TipoEmpleado
-select * from Empleados
-exec insertarEmpleados '0318-2002-01298','Paco','Perez',9362628,'Paco@gmail.com',null,7,2
-exec insertarEmpleados '0313-2002-01298','Pedro','Perez',9363628,'Pedro@gmail.com',null,7,2
-exec insertarEmpleados '0318-2006-01298','Pablo','Perez',9462628,'Pablo@gmail.com',null,7,2
-exec InsertarUsuario 'Paco','HolaMundo','0318-2002-01298','Gerente General'
-
-select * from Usuarios
-select * from TipoEmpleado
 ------------------USUARIO--------------------
 create procedure InsertarExtras(
 @Nombre varchar(45),
@@ -175,4 +157,4 @@ exec InsertarExtras 'Jacuzzi',130
 select * from Extras
 go
 
-create procedure ValidarUsuario	@userName varchar(45),	@Psw varchar(45)As begin	if exists(select UserName from Usuarios where username=@userName and Psw=@Psw)		select * from Usuarios where UserName=@userName	else 		raiserror('No existe el usuario',16,1)end
+select * from Usuarios
