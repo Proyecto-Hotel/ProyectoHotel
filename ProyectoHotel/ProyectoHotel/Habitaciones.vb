@@ -60,5 +60,9 @@
     Private Sub DataHabitaciones_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs)
 
     End Sub
+
+    Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
+
+    End Sub
 #End Region
 End Class

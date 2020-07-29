@@ -31,9 +31,6 @@ Partial Class MenuPrincipal
         Me.btnExtra = New System.Windows.Forms.Button()
         Me.btnReservar = New System.Windows.Forms.Button()
         Me.btnFactura = New System.Windows.Forms.Button()
-        Me.PanelBarraTitulo = New System.Windows.Forms.Panel()
-        Me.btnExtras = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.txtUsuarios = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Mantenimiento = New System.Windows.Forms.Button()
@@ -41,20 +38,23 @@ Partial Class MenuPrincipal
         Me.btnClientes = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnEmpleados = New System.Windows.Forms.Button()
+        Me.PanelBarraTitulo = New System.Windows.Forms.Panel()
         Me.btnRestaurar = New System.Windows.Forms.PictureBox()
         Me.btnMinimizar = New System.Windows.Forms.PictureBox()
         Me.btnMaximizar = New System.Windows.Forms.PictureBox()
         Me.btnCerrar = New System.Windows.Forms.PictureBox()
+        Me.btnExtras = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PanelMenu.SuspendLayout()
         Me.PanelSubmenuMan.SuspendLayout()
         Me.PanelSubmenuRes.SuspendLayout()
         Me.PanelBarraTitulo.SuspendLayout()
-        Me.btnExtras.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnRestaurar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnMinimizar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnMaximizar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnCerrar, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.btnExtras.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PanelMenu
@@ -195,42 +195,6 @@ Partial Class MenuPrincipal
         Me.btnFactura.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnFactura.UseVisualStyleBackColor = False
         '
-        'PanelBarraTitulo
-        '
-        Me.PanelBarraTitulo.BackColor = System.Drawing.Color.FromArgb(CType(CType(180, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.PanelBarraTitulo.Controls.Add(Me.btnRestaurar)
-        Me.PanelBarraTitulo.Controls.Add(Me.btnMinimizar)
-        Me.PanelBarraTitulo.Controls.Add(Me.btnMaximizar)
-        Me.PanelBarraTitulo.Controls.Add(Me.btnCerrar)
-        Me.PanelBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelBarraTitulo.Location = New System.Drawing.Point(0, 0)
-        Me.PanelBarraTitulo.Margin = New System.Windows.Forms.Padding(2)
-        Me.PanelBarraTitulo.Name = "PanelBarraTitulo"
-        Me.PanelBarraTitulo.Size = New System.Drawing.Size(808, 32)
-        Me.PanelBarraTitulo.TabIndex = 0
-        '
-        'btnExtras
-        '
-        Me.btnExtras.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(35, Byte), Integer))
-        Me.btnExtras.Controls.Add(Me.PictureBox1)
-        Me.btnExtras.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btnExtras.Location = New System.Drawing.Point(176, 32)
-        Me.btnExtras.Margin = New System.Windows.Forms.Padding(2)
-        Me.btnExtras.Name = "btnExtras"
-        Me.btnExtras.Size = New System.Drawing.Size(632, 423)
-        Me.btnExtras.TabIndex = 2
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.PictureBox1.Image = Global.ProyectoHotel.My.Resources.Resources.Logo_Hotel1
-        Me.PictureBox1.Location = New System.Drawing.Point(235, 113)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(174, 154)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
         'txtUsuarios
         '
         Me.txtUsuarios.FlatAppearance.BorderSize = 0
@@ -359,6 +323,20 @@ Partial Class MenuPrincipal
         Me.btnEmpleados.Text = "      Empleados"
         Me.btnEmpleados.UseVisualStyleBackColor = True
         '
+        'PanelBarraTitulo
+        '
+        Me.PanelBarraTitulo.BackColor = System.Drawing.Color.FromArgb(CType(CType(180, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.PanelBarraTitulo.Controls.Add(Me.btnRestaurar)
+        Me.PanelBarraTitulo.Controls.Add(Me.btnMinimizar)
+        Me.PanelBarraTitulo.Controls.Add(Me.btnMaximizar)
+        Me.PanelBarraTitulo.Controls.Add(Me.btnCerrar)
+        Me.PanelBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelBarraTitulo.Location = New System.Drawing.Point(0, 0)
+        Me.PanelBarraTitulo.Margin = New System.Windows.Forms.Padding(2)
+        Me.PanelBarraTitulo.Name = "PanelBarraTitulo"
+        Me.PanelBarraTitulo.Size = New System.Drawing.Size(808, 32)
+        Me.PanelBarraTitulo.TabIndex = 0
+        '
         'btnRestaurar
         '
         Me.btnRestaurar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -412,6 +390,28 @@ Partial Class MenuPrincipal
         Me.btnCerrar.TabIndex = 0
         Me.btnCerrar.TabStop = False
         '
+        'btnExtras
+        '
+        Me.btnExtras.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.btnExtras.Controls.Add(Me.PictureBox1)
+        Me.btnExtras.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnExtras.Location = New System.Drawing.Point(176, 32)
+        Me.btnExtras.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnExtras.Name = "btnExtras"
+        Me.btnExtras.Size = New System.Drawing.Size(632, 423)
+        Me.btnExtras.TabIndex = 2
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.PictureBox1.Image = Global.ProyectoHotel.My.Resources.Resources.Logo_Hotel1
+        Me.PictureBox1.Location = New System.Drawing.Point(235, 113)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(174, 154)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
         'MenuPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -430,12 +430,12 @@ Partial Class MenuPrincipal
         Me.PanelSubmenuRes.ResumeLayout(False)
         Me.PanelBarraTitulo.ResumeLayout(False)
         Me.PanelBarraTitulo.PerformLayout()
-        Me.btnExtras.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnRestaurar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnMinimizar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnMaximizar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnCerrar, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.btnExtras.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

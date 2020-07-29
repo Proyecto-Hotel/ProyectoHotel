@@ -31,8 +31,8 @@ Partial Class LOGIN
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel4 = New System.Windows.Forms.Panel()
         Me.btnCerrar = New System.Windows.Forms.PictureBox()
+        Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -126,15 +126,6 @@ Partial Class LOGIN
         Me.Panel2.Size = New System.Drawing.Size(311, 30)
         Me.Panel2.TabIndex = 82
         '
-        'Panel4
-        '
-        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(180, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(84, Byte), Integer))
-        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel4.Location = New System.Drawing.Point(0, 506)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(311, 10)
-        Me.Panel4.TabIndex = 83
-        '
         'btnCerrar
         '
         Me.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand
@@ -146,6 +137,15 @@ Partial Class LOGIN
         Me.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.btnCerrar.TabIndex = 1
         Me.btnCerrar.TabStop = False
+        '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(180, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(84, Byte), Integer))
+        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel4.Location = New System.Drawing.Point(0, 506)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(311, 10)
+        Me.Panel4.TabIndex = 83
         '
         'Panel5
         '

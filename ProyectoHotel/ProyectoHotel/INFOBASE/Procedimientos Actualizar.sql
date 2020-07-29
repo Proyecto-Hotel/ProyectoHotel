@@ -29,12 +29,12 @@ create procedure actualizarEmpleados(
 create procedure actualizarHabitaciones(
 	@IdHabitacion int,
 	@Precio int,
-	@Estado varchar(15)
+	@IdTipoHabitacion int
 )
 	as begin
-	if exists(select @IdHabitacion,Estado from habitaciones where IdHabitacion=@IdHabitacion and Estado='Libre')
+	if exists(select IdHabitacion from habitaciones where IdHabitacion=@IdHabitacion)
 		update habitaciones
-		set Precio=@Precio, Estado=@Estado
+		set Precio=@Precio, IdTipoHabitacion=@IdTipoHabitacion
 		where IdHabitacion=@IdHabitacion
 	else
 		raiserror('No se pudo actualizar esta habitacion, Ingrese otra',16,1)
@@ -47,7 +47,7 @@ create procedure actualizarHorarios(
 	@Descripcion varchar(45)
 )
 	as begin 
-	if exists(select @idHorarios from Horarios where idHorarios=@idHorarios)
+	if exists(select idHorarios from Horarios where idHorarios=@idHorarios)
 		update Horarios
 		set Horarios=@Horarios, Descripcion=@Descripcion
 		where idHorarios=@idHorarios
@@ -55,6 +55,7 @@ create procedure actualizarHorarios(
 		raiserror('No se puede actualizar este Horario, Ingrese otro',16,1)
 end
 go
+exec ConsultarHabitaciones 1
 -------------------------------------------HUESPED---------------------------------------------------------
 create procedure actualizarHuesped(
 	@Identidad varchar(15),

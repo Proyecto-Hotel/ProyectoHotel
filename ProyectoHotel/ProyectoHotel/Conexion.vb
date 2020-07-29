@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Public Class Conexion
-    Public conexion As SqlConnection = New SqlConnection("Data Source = CHANDIA;Initial Catalog=ProyectoHotel;Integrated Security=True")
+    Public conexion As SqlConnection = New SqlConnection("Data Source = LAPTOP-GK4VNBDO\SQLEXPRESS;Initial Catalog=ProyectoHotel;Integrated Security=True")
 
     Public Sub Abrirconexion()
         Try
@@ -145,7 +145,8 @@ Public Class Conexion
             conexion.Close()
         End Try
     End Function
-    Public Function InsertarUsuario(userName As Integer, Psw As Integer, Identidad As Integer) As Boolean
+
+    Public Function InsertarUsuario(userName As String, Psw As String, Identidad As String, TipoEmpleado As Integer) As Boolean
         Try
             conexion.Open()
             Dim cmd As New SqlCommand("InsertarUsuario", conexion)
@@ -153,6 +154,7 @@ Public Class Conexion
             cmd.Parameters.AddWithValue("@UserName", userName)
             cmd.Parameters.AddWithValue("@Psw", Psw)
             cmd.Parameters.AddWithValue("@Identidad", Identidad)
+            cmd.Parameters.AddWithValue("@TipoEmpleado", TipoEmpleado)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else
@@ -165,6 +167,7 @@ Public Class Conexion
             conexion.Close()
         End Try
     End Function
+
     Public Function actualizarEmpleados(Identidad As String, Nombre As String, Apellido As String,
                                         Telefono As Integer, Correo As String, RTN As String, idTipoEmpleado As Integer, idHorario As Integer) As Boolean
 
@@ -194,14 +197,14 @@ Public Class Conexion
             conexion.Close()
         End Try
     End Function
-    Public Function actualizarHabitaciones(idHabitacion As Integer, Precio As Integer, estado As String) As Boolean
+    Public Function actualizarHabitaciones(idHabitacion As Integer, Precio As Integer, IdTipoHabitacion As String) As Boolean
         Try
             conexion.Open()
             Dim cmd As New SqlCommand("actualizarHabitaciones", conexion)
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Parameters.AddWithValue("@idHabitacion", idHabitacion)
             cmd.Parameters.AddWithValue("@Precio", Precio)
-            cmd.Parameters.AddWithValue("@Estado", estado)
+            cmd.Parameters.AddWithValue("@IdTipoHabitacion", IdTipoHabitacion)
             If cmd.ExecuteNonQuery Then
                 Return True
             Else
@@ -303,7 +306,7 @@ Public Class Conexion
             conexion.Close()
         End Try
     End Function
-    Public Function actualizarUsuarios(userName As Integer, Psw As Integer, Identidad As Integer) As Boolean
+    Public Function actualizarUsuarios(userName As String, Psw As String, Identidad As Integer) As Boolean
         Try
             conexion.Open()
             Dim cmd As New SqlCommand("actualizarUsuarios", conexion)
@@ -346,14 +349,13 @@ Public Class Conexion
         End Try
     End Function
     Public Function consultarHuesped(Identidad As String)
-
         Try
             conexion.Open()
             Dim cmd As New SqlCommand("consultarHuesped", conexion)
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Parameters.AddWithValue("@Identidad", Identidad)
 
-            If cmd.ExecuteNonQuery > 0 Then
+            If cmd.ExecuteNonQuery <> 0 Then
                 Dim Tabla As New DataTable
                 Dim adaptador As New SqlDataAdapter(cmd)
                 adaptador.Fill(Tabla)
@@ -443,13 +445,15 @@ Public Class Conexion
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Parameters.AddWithValue("@IdHabitacion", IdHabitacion)
 
-            If cmd.ExecuteNonQuery > 0 Then
+            If cmd.ExecuteNonQuery <> 0 Then
                 Dim Tabla As New DataTable
                 Dim adaptador As New SqlDataAdapter(cmd)
                 adaptador.Fill(Tabla)
+                Dim x As Integer
+                x = Tabla.Rows.Count
                 Return Tabla
             Else
-                Return Nothing
+                Return -1
             End If
         Catch ex As Exception
             Return Nothing
@@ -645,6 +649,27 @@ Public Class Conexion
         Catch ex As Exception
             MsgBox(ex.Message)
             MsgBox("Error al eliminar Tipo Empleado")
+            Return False
+        Finally
+            conexion.Close()
+        End Try
+
+    End Function
+
+    Public Function ValidarUsuario(userName As String, Psw As String)
+        Try
+            conexion.Open()
+            Dim cmd = New SqlCommand("ValidarUsuario", conexion)
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Parameters.AddWithValue("@userName", userName)
+            cmd.Parameters.AddWithValue("@Psw", Psw)
+            If cmd.ExecuteNonQuery <> 0 Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
             Return False
         Finally
             conexion.Close()

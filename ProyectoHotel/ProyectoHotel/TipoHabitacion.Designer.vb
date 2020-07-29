@@ -22,9 +22,9 @@ Partial Class TipoHabitacion
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.txtCapacidad = New System.Windows.Forms.TextBox()
         Me.btnInsertar = New System.Windows.Forms.Button()
@@ -32,12 +32,12 @@ Partial Class TipoHabitacion
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.dtgTipoHabitacion = New System.Windows.Forms.DataGridView()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.dtgTipoHabitacion = New System.Windows.Forms.DataGridView()
         Me.Panel1.SuspendLayout()
-        CType(Me.dtgTipoHabitacion, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtgTipoHabitacion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txtNombre
@@ -124,46 +124,15 @@ Partial Class TipoHabitacion
         Me.Panel1.Size = New System.Drawing.Size(658, 423)
         Me.Panel1.TabIndex = 0
         '
-        'dtgTipoHabitacion
+        'PictureBox2
         '
-        Me.dtgTipoHabitacion.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(35, Byte), Integer))
-        Me.dtgTipoHabitacion.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.dtgTipoHabitacion.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
-        Me.dtgTipoHabitacion.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(18, Byte), Integer))
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.Info
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(18, Byte), Integer))
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtgTipoHabitacion.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
-        Me.dtgTipoHabitacion.ColumnHeadersHeight = 35
-        Me.dtgTipoHabitacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.dtgTipoHabitacion.EnableHeadersVisualStyles = False
-        Me.dtgTipoHabitacion.GridColor = System.Drawing.Color.Gray
-        Me.dtgTipoHabitacion.Location = New System.Drawing.Point(320, 26)
-        Me.dtgTipoHabitacion.Name = "dtgTipoHabitacion"
-        Me.dtgTipoHabitacion.ReadOnly = True
-        Me.dtgTipoHabitacion.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(48, Byte), Integer))
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.Info
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(66, Byte), Integer))
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtgTipoHabitacion.RowHeadersDefaultCellStyle = DataGridViewCellStyle8
-        Me.dtgTipoHabitacion.RowHeadersVisible = False
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(48, Byte), Integer))
-        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle9.NullValue = Nothing
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.dtgTipoHabitacion.RowsDefaultCellStyle = DataGridViewCellStyle9
-        Me.dtgTipoHabitacion.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.dtgTipoHabitacion.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dtgTipoHabitacion.Size = New System.Drawing.Size(306, 370)
-        Me.dtgTipoHabitacion.TabIndex = 10
+        Me.PictureBox2.Image = Global.ProyectoHotel.My.Resources.Resources.Habitacion_2
+        Me.PictureBox2.Location = New System.Drawing.Point(12, 3)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(44, 35)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 82
+        Me.PictureBox2.TabStop = False
         '
         'Label1
         '
@@ -176,15 +145,46 @@ Partial Class TipoHabitacion
         Me.Label1.TabIndex = 72
         Me.Label1.Text = "Tipo Habitaciones"
         '
-        'PictureBox2
+        'dtgTipoHabitacion
         '
-        Me.PictureBox2.Image = Global.ProyectoHotel.My.Resources.Resources.Habitacion_2
-        Me.PictureBox2.Location = New System.Drawing.Point(12, 3)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(44, 35)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 82
-        Me.PictureBox2.TabStop = False
+        Me.dtgTipoHabitacion.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.dtgTipoHabitacion.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dtgTipoHabitacion.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
+        Me.dtgTipoHabitacion.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(18, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Info
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(18, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtgTipoHabitacion.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dtgTipoHabitacion.ColumnHeadersHeight = 35
+        Me.dtgTipoHabitacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        Me.dtgTipoHabitacion.EnableHeadersVisualStyles = False
+        Me.dtgTipoHabitacion.GridColor = System.Drawing.Color.Gray
+        Me.dtgTipoHabitacion.Location = New System.Drawing.Point(320, 26)
+        Me.dtgTipoHabitacion.Name = "dtgTipoHabitacion"
+        Me.dtgTipoHabitacion.ReadOnly = True
+        Me.dtgTipoHabitacion.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(48, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Info
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(66, Byte), Integer))
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtgTipoHabitacion.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.dtgTipoHabitacion.RowHeadersVisible = False
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(48, Byte), Integer))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.NullValue = Nothing
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.dtgTipoHabitacion.RowsDefaultCellStyle = DataGridViewCellStyle3
+        Me.dtgTipoHabitacion.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.dtgTipoHabitacion.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dtgTipoHabitacion.Size = New System.Drawing.Size(306, 370)
+        Me.dtgTipoHabitacion.TabIndex = 10
         '
         'TipoHabitacion
         '
@@ -197,8 +197,8 @@ Partial Class TipoHabitacion
         Me.Text = "TipoHabitacion"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.dtgTipoHabitacion, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtgTipoHabitacion, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
