@@ -46,6 +46,8 @@ insert into Huesped(Identidad,Nombre,Apellido,Telefono,CorreoElectronico,RTN)
 values (@Identidad,@Nombre,@Apellido,@Telefono,@Correo,@RTN)
 End
 go
+
+select * from Usuarios
 -------------------------------HORARIOS------------------------------------------
 create procedure InsertarHorarios
 -- Definicion de alias
@@ -154,4 +156,5 @@ go
 exec InsertarExtras 'Jacuzzi',130
 select * from Extras
 go
-exec 
+
+select * from Usuarios
