@@ -112,6 +112,11 @@ Public Class MenuPrincipal
     Private Sub PanelBarraTitulo_Paint(sender As Object, e As PaintEventArgs) Handles PanelBarraTitulo.Paint
 
     End Sub
+
+    Private Sub btnCerrar_Click_1(sender As Object, e As EventArgs) Handles btnCerrar.Click
+        My.Forms.LoginUsuario.Close()
+
+    End Sub
 #End Region
 
     Private Sub AbrirFormEnPanel(Of Miform As {Form, New})()

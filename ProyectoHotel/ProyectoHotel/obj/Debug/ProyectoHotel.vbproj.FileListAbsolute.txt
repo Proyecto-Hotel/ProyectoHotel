@@ -29,3 +29,5 @@ C:\Users\Johan Urbina\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel
 C:\Users\Johan Urbina\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.vbproj.GenerateResource.cache
 C:\Users\Johan Urbina\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.vbproj.CoreCompileInputs.cache
 C:\Users\Johan Urbina\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.LoginUsuario.resources
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.Empleados.resources
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.LoginUsuario.resources

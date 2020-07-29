@@ -40,9 +40,9 @@
             Dim tabla As DataTable
             tabla = conexion.ListarHabitaciones()
             If tabla.Rows.Count <> 0 Then
-                DataHabitaciones.DataSource = tabla
+                dtgDatos.DataSource = tabla
             Else
-                DataHabitaciones.DataSource = Nothing
+                dtgDatos.DataSource = Nothing
             End If
         Catch ex As Exception
             MsgBox("Error al consultar")
@@ -75,9 +75,9 @@
             Id = Int(Val(TxtIdHabitacion.Text))
             tabla = conexion.ConsultarHabitaciones(Id)
             If tabla.Rows.Count <> 0 Then
-                DataHabitaciones.DataSource = tabla
+                dtgDatos.DataSource = tabla
             Else
-                DataHabitaciones.DataSource = Nothing
+                dtgDatos.DataSource = Nothing
             End If
         Catch ex As Exception
             MsgBox("Error al consultar")
@@ -87,5 +87,12 @@
     Private Sub Habitaciones_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        My.Forms.Usuarios.Show()
+        Me.Hide()
+    End Sub
+
+
 #End Region
 End Class

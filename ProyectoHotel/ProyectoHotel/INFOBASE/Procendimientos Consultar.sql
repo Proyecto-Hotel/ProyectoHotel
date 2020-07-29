@@ -72,15 +72,17 @@ select Em.IdTipoEmpleado as 'Código',Em.Puesto,Em.Sueldo from TipoEmpleado as Em
 end 
 
 ------------------------------LISTAR USUARIOS-------------------------------
-create procedure ListarUsuarios
+alter procedure ListarUsuarios
 as 
 Begin
 select Us.UserName as 'Usuario',CONCAT( Em.Nombre ,' ', Em.Apellido) as 'Nombre Completo' from Usuarios as Us
-inner Join Empleados as Em on Em.Identidad = Us.Identidad
+inner Join Empleados as Em on Em.Identidad = Us.Identidad where us.Estado = 'Activo'
 end 
-create procedure ConsultarUsuario(@UserName varchar(45))
+alter procedure ConsultarUsuario(@UserName varchar(45))
 as 
 Begin
 select Us.UserName as 'Usuario',CONCAT( Em.Nombre ,' ', Em.Apellido) as 'Nombre Completo' from Usuarios as Us
-inner Join Empleados as Em on Em.Identidad = Us.Identidad where Us.UserName = @UserName
+inner Join Empleados as Em on Em.Identidad = Us.Identidad where Us.UserName Like concat ('%' , @UserName, '%')
 end 
+exec ConsultarUsuario  'Ta'
+select * from Usuarios

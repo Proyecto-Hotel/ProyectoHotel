@@ -22,6 +22,9 @@ Partial Class Habitaciones
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -29,13 +32,16 @@ Partial Class Habitaciones
         Me.TxtIdHabitacion = New System.Windows.Forms.MaskedTextBox()
         Me.txtPrecio = New System.Windows.Forms.MaskedTextBox()
         Me.BtnAgregar = New System.Windows.Forms.Button()
-        Me.DataHabitaciones = New System.Windows.Forms.DataGridView()
         Me.PanelDG = New System.Windows.Forms.Panel()
+        Me.dtgDatos = New System.Windows.Forms.DataGridView()
         Me.BtnBuscar = New System.Windows.Forms.Button()
         Me.BtnEditar = New System.Windows.Forms.Button()
         Me.BtnListar = New System.Windows.Forms.Button()
-        CType(Me.DataHabitaciones, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.PanelDG.SuspendLayout()
+        CType(Me.dtgDatos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -70,12 +76,12 @@ Partial Class Habitaciones
         Me.cmbTipo.FormattingEnabled = True
         Me.cmbTipo.Location = New System.Drawing.Point(208, 133)
         Me.cmbTipo.Name = "cmbTipo"
-        Me.cmbTipo.Size = New System.Drawing.Size(121, 24)
+        Me.cmbTipo.Size = New System.Drawing.Size(193, 24)
         Me.cmbTipo.TabIndex = 7
         '
         'TxtIdHabitacion
         '
-        Me.TxtIdHabitacion.Location = New System.Drawing.Point(209, 54)
+        Me.TxtIdHabitacion.Location = New System.Drawing.Point(397, 175)
         Me.TxtIdHabitacion.Mask = "99"
         Me.TxtIdHabitacion.Name = "TxtIdHabitacion"
         Me.TxtIdHabitacion.Size = New System.Drawing.Size(54, 22)
@@ -85,7 +91,7 @@ Partial Class Habitaciones
         '
         'txtPrecio
         '
-        Me.txtPrecio.Location = New System.Drawing.Point(209, 92)
+        Me.txtPrecio.Location = New System.Drawing.Point(397, 110)
         Me.txtPrecio.Mask = "99999"
         Me.txtPrecio.Name = "txtPrecio"
         Me.txtPrecio.Size = New System.Drawing.Size(34, 22)
@@ -102,29 +108,62 @@ Partial Class Habitaciones
         Me.BtnAgregar.Text = "Ingresar"
         Me.BtnAgregar.UseVisualStyleBackColor = True
         '
-        'DataHabitaciones
-        '
-        Me.DataHabitaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataHabitaciones.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataHabitaciones.Location = New System.Drawing.Point(0, 0)
-        Me.DataHabitaciones.Name = "DataHabitaciones"
-        Me.DataHabitaciones.RowHeadersWidth = 51
-        Me.DataHabitaciones.RowTemplate.Height = 24
-        Me.DataHabitaciones.Size = New System.Drawing.Size(801, 189)
-        Me.DataHabitaciones.TabIndex = 11
-        '
         'PanelDG
         '
-        Me.PanelDG.Controls.Add(Me.DataHabitaciones)
+        Me.PanelDG.Controls.Add(Me.dtgDatos)
         Me.PanelDG.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.PanelDG.Location = New System.Drawing.Point(0, 285)
         Me.PanelDG.Name = "PanelDG"
         Me.PanelDG.Size = New System.Drawing.Size(801, 189)
         Me.PanelDG.TabIndex = 12
         '
+        'dtgDatos
+        '
+        Me.dtgDatos.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(48, Byte), Integer))
+        Me.dtgDatos.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dtgDatos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
+        Me.dtgDatos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(18, Byte), Integer))
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.Info
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(18, Byte), Integer))
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtgDatos.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
+        Me.dtgDatos.ColumnHeadersHeight = 35
+        Me.dtgDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        Me.dtgDatos.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dtgDatos.EnableHeadersVisualStyles = False
+        Me.dtgDatos.GridColor = System.Drawing.Color.Gray
+        Me.dtgDatos.Location = New System.Drawing.Point(0, 0)
+        Me.dtgDatos.Margin = New System.Windows.Forms.Padding(4)
+        Me.dtgDatos.Name = "dtgDatos"
+        Me.dtgDatos.ReadOnly = True
+        Me.dtgDatos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(48, Byte), Integer))
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.Info
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(66, Byte), Integer))
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dtgDatos.RowHeadersDefaultCellStyle = DataGridViewCellStyle8
+        Me.dtgDatos.RowHeadersVisible = False
+        Me.dtgDatos.RowHeadersWidth = 51
+        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(48, Byte), Integer))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle9.NullValue = Nothing
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.dtgDatos.RowsDefaultCellStyle = DataGridViewCellStyle9
+        Me.dtgDatos.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.dtgDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dtgDatos.Size = New System.Drawing.Size(801, 189)
+        Me.dtgDatos.TabIndex = 1
+        '
         'BtnBuscar
         '
-        Me.BtnBuscar.Location = New System.Drawing.Point(284, 49)
+        Me.BtnBuscar.Location = New System.Drawing.Point(326, 51)
         Me.BtnBuscar.Name = "BtnBuscar"
         Me.BtnBuscar.Size = New System.Drawing.Size(104, 28)
         Me.BtnBuscar.TabIndex = 13
@@ -149,11 +188,39 @@ Partial Class Habitaciones
         Me.BtnListar.Text = "Listar"
         Me.BtnListar.UseVisualStyleBackColor = True
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(208, 57)
+        Me.TextBox1.MaxLength = 2
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 22)
+        Me.TextBox1.TabIndex = 16
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(208, 90)
+        Me.TextBox2.MaxLength = 2
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(100, 22)
+        Me.TextBox2.TabIndex = 17
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(609, 172)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(104, 28)
+        Me.Button1.TabIndex = 18
+        Me.Button1.Text = "Cancelar"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Habitaciones
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(801, 474)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.BtnListar)
         Me.Controls.Add(Me.BtnEditar)
         Me.Controls.Add(Me.BtnBuscar)
@@ -167,8 +234,8 @@ Partial Class Habitaciones
         Me.Controls.Add(Me.Label1)
         Me.Name = "Habitaciones"
         Me.Text = "Habitaciones"
-        CType(Me.DataHabitaciones, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelDG.ResumeLayout(False)
+        CType(Me.dtgDatos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -181,9 +248,12 @@ Partial Class Habitaciones
     Friend WithEvents TxtIdHabitacion As MaskedTextBox
     Friend WithEvents txtPrecio As MaskedTextBox
     Friend WithEvents BtnAgregar As Button
-    Friend WithEvents DataHabitaciones As DataGridView
     Friend WithEvents PanelDG As Panel
     Friend WithEvents BtnBuscar As Button
     Friend WithEvents BtnEditar As Button
     Friend WithEvents BtnListar As Button
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents dtgDatos As DataGridView
+    Friend WithEvents Button1 As Button
 End Class
