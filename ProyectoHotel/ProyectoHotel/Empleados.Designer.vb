@@ -73,7 +73,8 @@ Partial Class Empleados
         Me.dtgEmpleado.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.dtgEmpleado.EnableHeadersVisualStyles = False
         Me.dtgEmpleado.GridColor = System.Drawing.Color.Gray
-        Me.dtgEmpleado.Location = New System.Drawing.Point(0, 230)
+        Me.dtgEmpleado.Location = New System.Drawing.Point(0, 283)
+        Me.dtgEmpleado.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.dtgEmpleado.Name = "dtgEmpleado"
         Me.dtgEmpleado.ReadOnly = True
         Me.dtgEmpleado.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
@@ -86,6 +87,7 @@ Partial Class Empleados
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dtgEmpleado.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dtgEmpleado.RowHeadersVisible = False
+        Me.dtgEmpleado.RowHeadersWidth = 51
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(48, Byte), Integer))
         DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
         DataGridViewCellStyle3.NullValue = Nothing
@@ -93,7 +95,7 @@ Partial Class Empleados
         Me.dtgEmpleado.RowsDefaultCellStyle = DataGridViewCellStyle3
         Me.dtgEmpleado.ScrollBars = System.Windows.Forms.ScrollBars.None
         Me.dtgEmpleado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dtgEmpleado.Size = New System.Drawing.Size(641, 193)
+        Me.dtgEmpleado.Size = New System.Drawing.Size(855, 238)
         Me.dtgEmpleado.TabIndex = 11
         '
         'Label1
@@ -101,18 +103,20 @@ Partial Class Empleados
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Lucida Sans Unicode", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.LightGray
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Location = New System.Drawing.Point(16, 11)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(88, 18)
+        Me.Label1.Size = New System.Drawing.Size(112, 23)
         Me.Label1.TabIndex = 14
         Me.Label1.Text = "Empleados"
         '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.LightGray
-        Me.Panel3.Location = New System.Drawing.Point(39, 60)
+        Me.Panel3.Location = New System.Drawing.Point(52, 74)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(168, 1)
+        Me.Panel3.Size = New System.Drawing.Size(224, 1)
         Me.Panel3.TabIndex = 18
         '
         'txtIdentidad
@@ -121,18 +125,20 @@ Partial Class Empleados
         Me.txtIdentidad.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtIdentidad.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtIdentidad.ForeColor = System.Drawing.Color.LightGray
-        Me.txtIdentidad.Location = New System.Drawing.Point(39, 41)
+        Me.txtIdentidad.Location = New System.Drawing.Point(52, 50)
+        Me.txtIdentidad.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtIdentidad.Name = "txtIdentidad"
-        Me.txtIdentidad.Size = New System.Drawing.Size(179, 20)
+        Me.txtIdentidad.Size = New System.Drawing.Size(239, 25)
         Me.txtIdentidad.TabIndex = 17
         Me.txtIdentidad.Text = "Identidad"
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.LightGray
-        Me.Panel1.Location = New System.Drawing.Point(39, 96)
+        Me.Panel1.Location = New System.Drawing.Point(52, 118)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(168, 1)
+        Me.Panel1.Size = New System.Drawing.Size(224, 1)
         Me.Panel1.TabIndex = 20
         '
         'txtNombre
@@ -141,18 +147,20 @@ Partial Class Empleados
         Me.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtNombre.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNombre.ForeColor = System.Drawing.Color.LightGray
-        Me.txtNombre.Location = New System.Drawing.Point(39, 77)
+        Me.txtNombre.Location = New System.Drawing.Point(52, 95)
+        Me.txtNombre.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(179, 20)
+        Me.txtNombre.Size = New System.Drawing.Size(239, 25)
         Me.txtNombre.TabIndex = 19
         Me.txtNombre.Text = "Nombre"
         '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.LightGray
-        Me.Panel2.Location = New System.Drawing.Point(39, 135)
+        Me.Panel2.Location = New System.Drawing.Point(52, 166)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(168, 1)
+        Me.Panel2.Size = New System.Drawing.Size(224, 1)
         Me.Panel2.TabIndex = 22
         '
         'txtApellido
@@ -161,18 +169,20 @@ Partial Class Empleados
         Me.txtApellido.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtApellido.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtApellido.ForeColor = System.Drawing.Color.LightGray
-        Me.txtApellido.Location = New System.Drawing.Point(39, 116)
+        Me.txtApellido.Location = New System.Drawing.Point(52, 143)
+        Me.txtApellido.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtApellido.Name = "txtApellido"
-        Me.txtApellido.Size = New System.Drawing.Size(179, 20)
+        Me.txtApellido.Size = New System.Drawing.Size(239, 25)
         Me.txtApellido.TabIndex = 21
         Me.txtApellido.Text = "Apellido"
         '
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.LightGray
-        Me.Panel4.Location = New System.Drawing.Point(39, 172)
+        Me.Panel4.Location = New System.Drawing.Point(52, 212)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(168, 1)
+        Me.Panel4.Size = New System.Drawing.Size(224, 1)
         Me.Panel4.TabIndex = 24
         '
         'txtTeléfono
@@ -181,18 +191,20 @@ Partial Class Empleados
         Me.txtTeléfono.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtTeléfono.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTeléfono.ForeColor = System.Drawing.Color.LightGray
-        Me.txtTeléfono.Location = New System.Drawing.Point(39, 153)
+        Me.txtTeléfono.Location = New System.Drawing.Point(52, 188)
+        Me.txtTeléfono.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtTeléfono.Name = "txtTeléfono"
-        Me.txtTeléfono.Size = New System.Drawing.Size(179, 20)
+        Me.txtTeléfono.Size = New System.Drawing.Size(239, 25)
         Me.txtTeléfono.TabIndex = 23
         Me.txtTeléfono.Text = "Teléfono"
         '
         'Panel6
         '
         Me.Panel6.BackColor = System.Drawing.Color.LightGray
-        Me.Panel6.Location = New System.Drawing.Point(257, 171)
+        Me.Panel6.Location = New System.Drawing.Point(343, 210)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(168, 1)
+        Me.Panel6.Size = New System.Drawing.Size(224, 1)
         Me.Panel6.TabIndex = 31
         '
         'txtHorario
@@ -201,18 +213,20 @@ Partial Class Empleados
         Me.txtHorario.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtHorario.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtHorario.ForeColor = System.Drawing.Color.LightGray
-        Me.txtHorario.Location = New System.Drawing.Point(257, 152)
+        Me.txtHorario.Location = New System.Drawing.Point(343, 187)
+        Me.txtHorario.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtHorario.Name = "txtHorario"
-        Me.txtHorario.Size = New System.Drawing.Size(179, 20)
+        Me.txtHorario.Size = New System.Drawing.Size(239, 25)
         Me.txtHorario.TabIndex = 30
         Me.txtHorario.Text = "Código de Horario"
         '
         'Panel7
         '
         Me.Panel7.BackColor = System.Drawing.Color.LightGray
-        Me.Panel7.Location = New System.Drawing.Point(257, 132)
+        Me.Panel7.Location = New System.Drawing.Point(343, 162)
+        Me.Panel7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(168, 1)
+        Me.Panel7.Size = New System.Drawing.Size(224, 1)
         Me.Panel7.TabIndex = 29
         '
         'txtTipoEmpleado
@@ -221,18 +235,20 @@ Partial Class Empleados
         Me.txtTipoEmpleado.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtTipoEmpleado.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTipoEmpleado.ForeColor = System.Drawing.Color.LightGray
-        Me.txtTipoEmpleado.Location = New System.Drawing.Point(257, 113)
+        Me.txtTipoEmpleado.Location = New System.Drawing.Point(343, 139)
+        Me.txtTipoEmpleado.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtTipoEmpleado.Name = "txtTipoEmpleado"
-        Me.txtTipoEmpleado.Size = New System.Drawing.Size(179, 20)
+        Me.txtTipoEmpleado.Size = New System.Drawing.Size(239, 25)
         Me.txtTipoEmpleado.TabIndex = 28
         Me.txtTipoEmpleado.Text = "Código de Empleado"
         '
         'Panel8
         '
         Me.Panel8.BackColor = System.Drawing.Color.LightGray
-        Me.Panel8.Location = New System.Drawing.Point(257, 96)
+        Me.Panel8.Location = New System.Drawing.Point(343, 118)
+        Me.Panel8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(168, 1)
+        Me.Panel8.Size = New System.Drawing.Size(224, 1)
         Me.Panel8.TabIndex = 27
         '
         'txtRTN
@@ -241,18 +257,20 @@ Partial Class Empleados
         Me.txtRTN.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtRTN.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtRTN.ForeColor = System.Drawing.Color.LightGray
-        Me.txtRTN.Location = New System.Drawing.Point(257, 77)
+        Me.txtRTN.Location = New System.Drawing.Point(343, 95)
+        Me.txtRTN.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtRTN.Name = "txtRTN"
-        Me.txtRTN.Size = New System.Drawing.Size(179, 20)
+        Me.txtRTN.Size = New System.Drawing.Size(239, 25)
         Me.txtRTN.TabIndex = 26
         Me.txtRTN.Text = "RTN"
         '
         'Panel9
         '
         Me.Panel9.BackColor = System.Drawing.Color.LightGray
-        Me.Panel9.Location = New System.Drawing.Point(257, 60)
+        Me.Panel9.Location = New System.Drawing.Point(343, 74)
+        Me.Panel9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(168, 1)
+        Me.Panel9.Size = New System.Drawing.Size(224, 1)
         Me.Panel9.TabIndex = 35
         '
         'txtCorreo
@@ -261,18 +279,20 @@ Partial Class Empleados
         Me.txtCorreo.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtCorreo.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtCorreo.ForeColor = System.Drawing.Color.LightGray
-        Me.txtCorreo.Location = New System.Drawing.Point(257, 41)
+        Me.txtCorreo.Location = New System.Drawing.Point(343, 50)
+        Me.txtCorreo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtCorreo.Name = "txtCorreo"
-        Me.txtCorreo.Size = New System.Drawing.Size(179, 20)
+        Me.txtCorreo.Size = New System.Drawing.Size(239, 25)
         Me.txtCorreo.TabIndex = 34
         Me.txtCorreo.Text = "Correo"
         '
         'Panel10
         '
         Me.Panel10.BackColor = System.Drawing.Color.Goldenrod
-        Me.Panel10.Location = New System.Drawing.Point(0, 193)
+        Me.Panel10.Location = New System.Drawing.Point(0, 238)
+        Me.Panel10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(641, 1)
+        Me.Panel10.Size = New System.Drawing.Size(855, 1)
         Me.Panel10.TabIndex = 36
         '
         'btnActualizar
@@ -281,9 +301,10 @@ Partial Class Empleados
         Me.btnActualizar.FlatAppearance.BorderColor = System.Drawing.Color.Goldenrod
         Me.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnActualizar.ForeColor = System.Drawing.Color.LightGray
-        Me.btnActualizar.Location = New System.Drawing.Point(473, 98)
+        Me.btnActualizar.Location = New System.Drawing.Point(631, 121)
+        Me.btnActualizar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnActualizar.Name = "btnActualizar"
-        Me.btnActualizar.Size = New System.Drawing.Size(132, 30)
+        Me.btnActualizar.Size = New System.Drawing.Size(176, 37)
         Me.btnActualizar.TabIndex = 41
         Me.btnActualizar.Text = "Actualizar"
         Me.btnActualizar.UseVisualStyleBackColor = False
@@ -294,9 +315,10 @@ Partial Class Empleados
         Me.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.Goldenrod
         Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGuardar.ForeColor = System.Drawing.Color.LightGray
-        Me.btnGuardar.Location = New System.Drawing.Point(473, 60)
+        Me.btnGuardar.Location = New System.Drawing.Point(631, 74)
+        Me.btnGuardar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnGuardar.Name = "btnGuardar"
-        Me.btnGuardar.Size = New System.Drawing.Size(132, 30)
+        Me.btnGuardar.Size = New System.Drawing.Size(176, 37)
         Me.btnGuardar.TabIndex = 40
         Me.btnGuardar.Text = "Guardar"
         Me.btnGuardar.UseVisualStyleBackColor = False
@@ -307,9 +329,10 @@ Partial Class Empleados
         Me.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.Goldenrod
         Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEliminar.ForeColor = System.Drawing.Color.LightGray
-        Me.btnEliminar.Location = New System.Drawing.Point(473, 138)
+        Me.btnEliminar.Location = New System.Drawing.Point(631, 170)
+        Me.btnEliminar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(132, 30)
+        Me.btnEliminar.Size = New System.Drawing.Size(176, 37)
         Me.btnEliminar.TabIndex = 42
         Me.btnEliminar.Text = "Eliminar"
         Me.btnEliminar.UseVisualStyleBackColor = False
@@ -320,36 +343,39 @@ Partial Class Empleados
         Me.txtBuscar.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtBuscar.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtBuscar.ForeColor = System.Drawing.Color.LightGray
-        Me.txtBuscar.Location = New System.Drawing.Point(15, 204)
+        Me.txtBuscar.Location = New System.Drawing.Point(20, 251)
+        Me.txtBuscar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtBuscar.Name = "txtBuscar"
-        Me.txtBuscar.Size = New System.Drawing.Size(179, 20)
+        Me.txtBuscar.Size = New System.Drawing.Size(239, 25)
         Me.txtBuscar.TabIndex = 37
         Me.txtBuscar.Text = "Buscar"
         '
         'Panel11
         '
         Me.Panel11.BackColor = System.Drawing.Color.LightGray
-        Me.Panel11.Location = New System.Drawing.Point(15, 223)
+        Me.Panel11.Location = New System.Drawing.Point(20, 274)
+        Me.Panel11.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel11.Name = "Panel11"
-        Me.Panel11.Size = New System.Drawing.Size(250, 1)
+        Me.Panel11.Size = New System.Drawing.Size(333, 1)
         Me.Panel11.TabIndex = 38
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.ProyectoHotel.My.Resources.Resources.Buscar
-        Me.PictureBox1.Location = New System.Drawing.Point(242, 202)
+        Me.PictureBox1.Location = New System.Drawing.Point(323, 249)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(23, 19)
+        Me.PictureBox1.Size = New System.Drawing.Size(31, 23)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 39
         Me.PictureBox1.TabStop = False
         '
         'Empleados
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(35, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(641, 423)
+        Me.ClientSize = New System.Drawing.Size(855, 521)
         Me.Controls.Add(Me.btnEliminar)
         Me.Controls.Add(Me.btnActualizar)
         Me.Controls.Add(Me.btnGuardar)
@@ -376,6 +402,7 @@ Partial Class Empleados
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.dtgEmpleado)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Empleados"
         Me.Text = "Empleados"
         CType(Me.dtgEmpleado, System.ComponentModel.ISupportInitialize).EndInit()
