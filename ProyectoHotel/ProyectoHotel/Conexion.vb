@@ -125,7 +125,7 @@ Public Class Conexion
             conexion.Close()
         End Try
     End Function
-    Public Function insertarHabitacion(idHabitacion As Integer, idTipoHabitacion As Integer, Precio As Integer) As Boolean
+    Public Function insertarHabitacion(idHabitacion As Integer, idTipoHabitacion As String, Precio As Integer) As Boolean
         Try
             conexion.Open()
             Dim cmd As New SqlCommand("insertarHabitacion", conexion)
