@@ -51,7 +51,7 @@ Partial Class Reservacion
         '
         Me.cbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbEstado.FormattingEnabled = True
-        Me.cbEstado.Items.AddRange(New Object() {"Reservado", "Disponible"})
+        Me.cbEstado.Items.AddRange(New Object() {"Reservado", "Eliminado"})
         Me.cbEstado.Location = New System.Drawing.Point(214, 158)
         Me.cbEstado.Name = "cbEstado"
         Me.cbEstado.Size = New System.Drawing.Size(137, 21)
@@ -208,9 +208,9 @@ Partial Class Reservacion
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(214, 140)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(39, 13)
+        Me.Label6.Size = New System.Drawing.Size(43, 13)
         Me.Label6.TabIndex = 34
-        Me.Label6.Text = "Label6"
+        Me.Label6.Text = " Estado"
         '
         'Label7
         '
