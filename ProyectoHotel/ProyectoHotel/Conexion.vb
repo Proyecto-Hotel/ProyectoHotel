@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Public Class Conexion
-    Public conexion As SqlConnection = New SqlConnection("Data Source=CHANDIA;Initial Catalog=ProyectoHotel;Integrated Security=True")
+    Public conexion As SqlConnection = New SqlConnection("Data Source=LAPTOP-GK4VNBDO\SQLEXPRESS;Initial Catalog=ProyectoHotel;Integrated Security=True")
 
     Public Sub Abrirconexion()
         Try
@@ -246,7 +246,7 @@ Public Class Conexion
             cmd.Parameters.AddWithValue("@Nombre", Nombre)
             cmd.Parameters.AddWithValue("@Apellido", Apellido)
             cmd.Parameters.AddWithValue("@Telefono", Telefono)
-            cmd.Parameters.AddWithValue("@Correo", Correo)
+            cmd.Parameters.AddWithValue("@CorreoElectronico", Correo)
             cmd.Parameters.AddWithValue("@RTN", RTN)
 
 

@@ -44,10 +44,10 @@ Partial Class Clientes
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.txtIdentidad = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.dtgEmpleado = New System.Windows.Forms.DataGridView()
+        Me.dtgCliente = New System.Windows.Forms.DataGridView()
         Me.Panel10 = New System.Windows.Forms.Panel()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dtgEmpleado, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dtgCliente, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnEliminar
@@ -250,12 +250,12 @@ Partial Class Clientes
         Me.Label1.TabIndex = 44
         Me.Label1.Text = "Clientes"
         '
-        'dtgEmpleado
+        'dtgCliente
         '
-        Me.dtgEmpleado.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(35, Byte), Integer))
-        Me.dtgEmpleado.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.dtgEmpleado.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
-        Me.dtgEmpleado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dtgCliente.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.dtgCliente.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dtgCliente.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
+        Me.dtgCliente.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(18, Byte), Integer))
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -263,16 +263,16 @@ Partial Class Clientes
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(18, Byte), Integer))
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtgEmpleado.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        Me.dtgEmpleado.ColumnHeadersHeight = 30
-        Me.dtgEmpleado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        Me.dtgEmpleado.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.dtgEmpleado.EnableHeadersVisualStyles = False
-        Me.dtgEmpleado.GridColor = System.Drawing.Color.Gray
-        Me.dtgEmpleado.Location = New System.Drawing.Point(0, 226)
-        Me.dtgEmpleado.Name = "dtgEmpleado"
-        Me.dtgEmpleado.ReadOnly = True
-        Me.dtgEmpleado.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dtgCliente.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dtgCliente.ColumnHeadersHeight = 30
+        Me.dtgCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        Me.dtgCliente.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.dtgCliente.EnableHeadersVisualStyles = False
+        Me.dtgCliente.GridColor = System.Drawing.Color.Gray
+        Me.dtgCliente.Location = New System.Drawing.Point(0, 226)
+        Me.dtgCliente.Name = "dtgCliente"
+        Me.dtgCliente.ReadOnly = True
+        Me.dtgCliente.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(48, Byte), Integer))
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -280,17 +280,17 @@ Partial Class Clientes
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(66, Byte), Integer))
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dtgEmpleado.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.dtgEmpleado.RowHeadersVisible = False
+        Me.dtgCliente.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.dtgCliente.RowHeadersVisible = False
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(48, Byte), Integer))
         DataGridViewCellStyle3.ForeColor = System.Drawing.Color.White
         DataGridViewCellStyle3.NullValue = Nothing
         DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.dtgEmpleado.RowsDefaultCellStyle = DataGridViewCellStyle3
-        Me.dtgEmpleado.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.dtgEmpleado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dtgEmpleado.Size = New System.Drawing.Size(641, 197)
-        Me.dtgEmpleado.TabIndex = 43
+        Me.dtgCliente.RowsDefaultCellStyle = DataGridViewCellStyle3
+        Me.dtgCliente.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.dtgCliente.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dtgCliente.Size = New System.Drawing.Size(641, 197)
+        Me.dtgCliente.TabIndex = 43
         '
         'Panel10
         '
@@ -326,12 +326,12 @@ Partial Class Clientes
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.txtIdentidad)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.dtgEmpleado)
+        Me.Controls.Add(Me.dtgCliente)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Clientes"
         Me.Text = "Clientes"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dtgEmpleado, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dtgCliente, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -356,6 +356,6 @@ Partial Class Clientes
     Friend WithEvents Panel3 As Panel
     Friend WithEvents txtIdentidad As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents dtgEmpleado As DataGridView
+    Friend WithEvents dtgCliente As DataGridView
     Friend WithEvents Panel10 As Panel
 End Class
