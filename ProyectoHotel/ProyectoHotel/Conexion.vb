@@ -1,7 +1,12 @@
 ﻿Imports System.Data.SqlClient
+Imports System.Security.Cryptography
+Imports System.Text
 Public Class Conexion
     Public conexion As SqlConnection = New SqlConnection("Data Source=LAPTOP-GK4VNBDO\SQLEXPRESS;Initial Catalog=ProyectoHotel;Integrated Security=True")
-
+    Dim des As New TripleDESCryptoServiceProvider
+    Dim MD5 As New MD5CryptoServiceProvider
+    Public dv As New DataView
+    Public ds As DataSet = New DataSet()
     Public Sub Abrirconexion()
         Try
             conexion.Open()
@@ -672,5 +677,15 @@ Public Class Conexion
         End Try
 
     End Function
+
+    Public Sub Llenar(ByVal sql, ByVal tabla)
+        Dim cmb As SqlCommandBuilder
+        Dim da As SqlDataAdapter
+        ds.Tables.Clear()
+        da = New SqlDataAdapter(sql, conexion)
+        cmb = New SqlCommandBuilder(da)
+        da.Fill(ds, tabla)
+        dv.Table = ds.Tables(0)
+    End Sub
 
 End Class
