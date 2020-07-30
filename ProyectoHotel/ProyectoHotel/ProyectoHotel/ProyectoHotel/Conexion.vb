@@ -368,6 +368,30 @@ Public Class Conexion
             conexion.Close()
         End Try
     End Function
+    Public Function actualizarReservaciones(IdReservacion As Integer, FechaI As Date, FechaF As Date, CantidadDias As Integer, NumTarjeta As String, IdHuesped As Integer, IdHabitacion As Integer) As Boolean
+        Try
+            conexion.Open()
+            Dim cmd As New SqlCommand("actualizarReservacion", conexion)
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Parameters.AddWithValue("@IdReservacion", IdHabitacion)
+            cmd.Parameters.AddWithValue("@FechaI", FechaI)
+            cmd.Parameters.AddWithValue("@FechaF", FechaF)
+            cmd.Parameters.AddWithValue("@CantidadDias", CantidadDias)
+            cmd.Parameters.AddWithValue("@NumTarjeta", NumTarjeta)
+            cmd.Parameters.AddWithValue("@IdHuesped", IdHuesped)
+            cmd.Parameters.AddWithValue("@IdHabitacion", IdHabitacion)
+            If cmd.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            conexion.Close()
+        End Try
+    End Function
     Public Function ListarHuesped()
         Try
             conexion.Open()

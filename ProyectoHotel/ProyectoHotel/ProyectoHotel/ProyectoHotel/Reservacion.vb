@@ -70,6 +70,8 @@ Public Class Reservacion
     End Sub
 
     Private Sub BtnModificar_Click(sender As Object, e As EventArgs) Handles BtnModificar.Click
+        Habitacion = cbHabitacion.SelectedIndex + 1
+        cliente = cbCliente.SelectedIndex + 1
         If txtCantidad.Text = "" Or txtFechaF.Text = "" Or txtNum.Text = "" Or cbCliente.Text = "" Or txtFechai.Text = "" Or cbEstado.Text = "" Or cbHabitacion.Text = "" Then
             MessageBox.Show("Debe llenar todas las casillas ", "Error")
             Exit Sub
