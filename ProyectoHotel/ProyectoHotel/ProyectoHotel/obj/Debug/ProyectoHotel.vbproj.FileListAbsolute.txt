@@ -1,0 +1,55 @@
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.vbprojAssemblyReference.cache
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.Habitaciones.resources
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.MenuPrincipal.resources
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.Mantenimiento.resources
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.Resources.resources
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.vbproj.GenerateResource.cache
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.vbproj.CoreCompileInputs.cache
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\bin\Debug\ProyectoHotel.exe.config
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\bin\Debug\ProyectoHotel.exe
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\bin\Debug\ProyectoHotel.pdb
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\bin\Debug\ProyectoHotel.xml
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.exe
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.xml
+C:\Users\Elmer Chandia\Documents\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.pdb
+C:\Users\jonat\OneDrive\Documentos\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\bin\Debug\ProyectoHotel.exe.config
+C:\Users\jonat\OneDrive\Documentos\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\bin\Debug\ProyectoHotel.exe
+C:\Users\jonat\OneDrive\Documentos\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\bin\Debug\ProyectoHotel.pdb
+C:\Users\jonat\OneDrive\Documentos\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\bin\Debug\ProyectoHotel.xml
+C:\Users\jonat\OneDrive\Documentos\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.vbprojAssemblyReference.cache
+C:\Users\jonat\OneDrive\Documentos\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.DiseñoDTGV.resources
+C:\Users\jonat\OneDrive\Documentos\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.Habitaciones.resources
+C:\Users\jonat\OneDrive\Documentos\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.MenuPrincipal.resources
+C:\Users\jonat\OneDrive\Documentos\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.Mantenimiento.resources
+C:\Users\jonat\OneDrive\Documentos\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.Resources.resources
+C:\Users\jonat\OneDrive\Documentos\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.TipoHabitacion.resources
+C:\Users\jonat\OneDrive\Documentos\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.vbproj.GenerateResource.cache
+C:\Users\jonat\OneDrive\Documentos\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.vbproj.CoreCompileInputs.cache
+C:\Users\jonat\OneDrive\Documentos\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.exe
+C:\Users\jonat\OneDrive\Documentos\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.xml
+C:\Users\jonat\OneDrive\Documentos\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.pdb
+C:\Users\jonat\OneDrive\Documentos\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.Empleados.resources
+C:\Users\jonat\OneDrive\Documentos\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.Clientes.resources
+C:\Users\jonat\OneDrive\Documentos\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.Extras.resources
+C:\Users\jonat\OneDrive\Documentos\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.Horarios.resources
+C:\Users\jonat\OneDrive\Documentos\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.LOGIN.resources
+C:\Users\jonat\OneDrive\Documentos\GitHub\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.Usuarios.resources
+C:\Users\nahum\Source\Repos\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.vbprojAssemblyReference.cache
+C:\Users\nahum\Source\Repos\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.Clientes.resources
+C:\Users\nahum\Source\Repos\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.DiseñoDTGV.resources
+C:\Users\nahum\Source\Repos\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.Empleados.resources
+C:\Users\nahum\Source\Repos\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.Extras.resources
+C:\Users\nahum\Source\Repos\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.Habitaciones.resources
+C:\Users\nahum\Source\Repos\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.Horarios.resources
+C:\Users\nahum\Source\Repos\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.LOGIN.resources
+C:\Users\nahum\Source\Repos\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.MenuPrincipal.resources
+C:\Users\nahum\Source\Repos\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.Mantenimiento.resources
+C:\Users\nahum\Source\Repos\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.Resources.resources
+C:\Users\nahum\Source\Repos\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.TipoHabitacion.resources
+C:\Users\nahum\Source\Repos\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.Usuarios.resources
+C:\Users\nahum\Source\Repos\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.vbproj.GenerateResource.cache
+C:\Users\nahum\Source\Repos\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.vbproj.CoreCompileInputs.cache
+C:\Users\nahum\Source\Repos\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.exe
+C:\Users\nahum\Source\Repos\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.xml
+C:\Users\nahum\Source\Repos\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.pdb
+C:\Users\nahum\Source\Repos\ProyectoHotel\ProyectoHotel\ProyectoHotel\obj\Debug\ProyectoHotel.Reservacion.resources
